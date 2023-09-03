@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C70FBAF22AA45F5E0047272B /* ScapeaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FBAF12AA45F5E0047272B /* ScapeaApp.swift */; };
+		C70FBAF42AA45F5E0047272B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FBAF32AA45F5E0047272B /* ContentView.swift */; };
+		C70FBAF62AA45F5F0047272B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70FBAF52AA45F5F0047272B /* Assets.xcassets */; };
+		C70FBAF92AA45F5F0047272B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70FBAF82AA45F5F0047272B /* Preview Assets.xcassets */; };
+		C75BA7F12AA50E42002B9888 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75BA7F02AA50E41002B9888 /* ForgotPasswordViewModel.swift */; };
+		C75BA7F32AA50EA2002B9888 /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75BA7F22AA50EA2002B9888 /* EmailView.swift */; };
+		C75BA7F52AA510E4002B9888 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75BA7F42AA510E4002B9888 /* OTPView.swift */; };
+		C75BA7F72AA510F7002B9888 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75BA7F62AA510F7002B9888 /* ResetPasswordView.swift */; };
+		C7951F592AA461E1006DF1E6 /* OnboardingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7951F582AA461E1006DF1E6 /* OnboardingStep.swift */; };
+		C7951F5D2AA463B3006DF1E6 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7951F5C2AA463B3006DF1E6 /* OnboardingView.swift */; };
+		C7951F622AA463F7006DF1E6 /* OnboardingStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7951F612AA463F7006DF1E6 /* OnboardingStepView.swift */; };
+		C7951F662AA46787006DF1E6 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7951F652AA46787006DF1E6 /* RoundedCorner.swift */; };
+		C7951F682AA48590006DF1E6 /* OnboardingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7951F672AA48590006DF1E6 /* OnboardingProgressView.swift */; };
+		C7951F6A2AA48FD4006DF1E6 /* ScapeaColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7951F692AA48FD4006DF1E6 /* ScapeaColor.swift */; };
+		C7951F6C2AA49459006DF1E6 /* ScapeaImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7951F6B2AA49458006DF1E6 /* ScapeaImage.swift */; };
+		C7951F702AA49777006DF1E6 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7951F6F2AA49777006DF1E6 /* AuthenticationView.swift */; };
+		C7951F732AA497F1006DF1E6 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7951F722AA497F1006DF1E6 /* AuthenticationViewModel.swift */; };
+		C7951F752AA49E18006DF1E6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7951F742AA49E17006DF1E6 /* LoginView.swift */; };
+		C7951F772AA49E67006DF1E6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7951F762AA49E67006DF1E6 /* LoginViewModel.swift */; };
+		C7951F792AA49F4A006DF1E6 /* PasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7951F782AA49F4A006DF1E6 /* PasswordField.swift */; };
+		C7951F7B2AA4A420006DF1E6 /* ScapeaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7951F7A2AA4A420006DF1E6 /* ScapeaButton.swift */; };
+		C7E840692AA504A800DC0926 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E840682AA504A800DC0926 /* SignUpView.swift */; };
+		C7E8406B2AA504DA00DC0926 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E8406A2AA504DA00DC0926 /* SignUpViewModel.swift */; };
+		C7E840702AA50A3100DC0926 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E8406F2AA50A3100DC0926 /* ForgotPasswordView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C70FBAEE2AA45F5E0047272B /* Scapea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scapea.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70FBAF12AA45F5E0047272B /* ScapeaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScapeaApp.swift; sourceTree = "<group>"; };
+		C70FBAF32AA45F5E0047272B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C70FBAF52AA45F5F0047272B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C70FBAF82AA45F5F0047272B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C75BA7F02AA50E41002B9888 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		C75BA7F22AA50EA2002B9888 /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
+		C75BA7F42AA510E4002B9888 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
+		C75BA7F62AA510F7002B9888 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		C7951F582AA461E1006DF1E6 /* OnboardingStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStep.swift; sourceTree = "<group>"; };
+		C7951F5C2AA463B3006DF1E6 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		C7951F612AA463F7006DF1E6 /* OnboardingStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStepView.swift; sourceTree = "<group>"; };
+		C7951F652AA46787006DF1E6 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		C7951F672AA48590006DF1E6 /* OnboardingProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingProgressView.swift; sourceTree = "<group>"; };
+		C7951F692AA48FD4006DF1E6 /* ScapeaColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScapeaColor.swift; sourceTree = "<group>"; };
+		C7951F6B2AA49458006DF1E6 /* ScapeaImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScapeaImage.swift; sourceTree = "<group>"; };
+		C7951F6F2AA49777006DF1E6 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		C7951F722AA497F1006DF1E6 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		C7951F742AA49E17006DF1E6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C7951F762AA49E67006DF1E6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C7951F782AA49F4A006DF1E6 /* PasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordField.swift; sourceTree = "<group>"; };
+		C7951F7A2AA4A420006DF1E6 /* ScapeaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScapeaButton.swift; sourceTree = "<group>"; };
+		C7E840682AA504A800DC0926 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		C7E8406A2AA504DA00DC0926 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		C7E8406F2AA50A3100DC0926 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C70FBAEB2AA45F5E0047272B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C70FBAE52AA45F5E0047272B = {
+			isa = PBXGroup;
+			children = (
+				C70FBAF02AA45F5E0047272B /* Scapea */,
+				C70FBAEF2AA45F5E0047272B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C70FBAEF2AA45F5E0047272B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C70FBAEE2AA45F5E0047272B /* Scapea.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C70FBAF02AA45F5E0047272B /* Scapea */ = {
+			isa = PBXGroup;
+			children = (
+				C70FBAF12AA45F5E0047272B /* ScapeaApp.swift */,
+				C70FBAF32AA45F5E0047272B /* ContentView.swift */,
+				C70FBAFF2AA45FA70047272B /* Core */,
+				C70FBAF52AA45F5F0047272B /* Assets.xcassets */,
+				C70FBAF72AA45F5F0047272B /* Preview Content */,
+			);
+			path = Scapea;
+			sourceTree = "<group>";
+		};
+		C70FBAF72AA45F5F0047272B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C70FBAF82AA45F5F0047272B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C70FBAFF2AA45FA70047272B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C7951F642AA4676F006DF1E6 /* Utilities */,
+				C7951F552AA461A2006DF1E6 /* Onboarding */,
+				C7951F532AA460DC006DF1E6 /* Authentication */,
+				C7951F542AA460E6006DF1E6 /* Dashboard */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C7951F532AA460DC006DF1E6 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C7951F6D2AA4973D006DF1E6 /* Model */,
+				C7951F6E2AA49744006DF1E6 /* View */,
+				C7951F712AA497DA006DF1E6 /* ViewModel */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		C7951F542AA460E6006DF1E6 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		C7951F552AA461A2006DF1E6 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				C7951F562AA461BF006DF1E6 /* Model */,
+				C7951F572AA461C4006DF1E6 /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		C7951F562AA461BF006DF1E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7951F582AA461E1006DF1E6 /* OnboardingStep.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7951F572AA461C4006DF1E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7951F5C2AA463B3006DF1E6 /* OnboardingView.swift */,
+				C7951F612AA463F7006DF1E6 /* OnboardingStepView.swift */,
+				C7951F672AA48590006DF1E6 /* OnboardingProgressView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7951F642AA4676F006DF1E6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C7951F652AA46787006DF1E6 /* RoundedCorner.swift */,
+				C7951F692AA48FD4006DF1E6 /* ScapeaColor.swift */,
+				C7951F6B2AA49458006DF1E6 /* ScapeaImage.swift */,
+				C7951F782AA49F4A006DF1E6 /* PasswordField.swift */,
+				C7951F7A2AA4A420006DF1E6 /* ScapeaButton.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C7951F6D2AA4973D006DF1E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7951F6E2AA49744006DF1E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7951F6F2AA49777006DF1E6 /* AuthenticationView.swift */,
+				C7E8406C2AA509F000DC0926 /* Login */,
+				C7E8406D2AA509FF00DC0926 /* Sign Up */,
+				C7E8406E2AA50A0600DC0926 /* Forgot Password */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7951F712AA497DA006DF1E6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C7951F722AA497F1006DF1E6 /* AuthenticationViewModel.swift */,
+				C7951F762AA49E67006DF1E6 /* LoginViewModel.swift */,
+				C7E8406A2AA504DA00DC0926 /* SignUpViewModel.swift */,
+				C75BA7F02AA50E41002B9888 /* ForgotPasswordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C7E8406C2AA509F000DC0926 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C7951F742AA49E17006DF1E6 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C7E8406D2AA509FF00DC0926 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				C7E840682AA504A800DC0926 /* SignUpView.swift */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		C7E8406E2AA50A0600DC0926 /* Forgot Password */ = {
+			isa = PBXGroup;
+			children = (
+				C7E8406F2AA50A3100DC0926 /* ForgotPasswordView.swift */,
+				C75BA7F22AA50EA2002B9888 /* EmailView.swift */,
+				C75BA7F42AA510E4002B9888 /* OTPView.swift */,
+				C75BA7F62AA510F7002B9888 /* ResetPasswordView.swift */,
+			);
+			path = "Forgot Password";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C70FBAED2AA45F5E0047272B /* Scapea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C70FBAFC2AA45F5F0047272B /* Build configuration list for PBXNativeTarget "Scapea" */;
+			buildPhases = (
+				C70FBAEA2AA45F5E0047272B /* Sources */,
+				C70FBAEB2AA45F5E0047272B /* Frameworks */,
+				C70FBAEC2AA45F5E0047272B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Scapea;
+			productName = Scapea;
+			productReference = C70FBAEE2AA45F5E0047272B /* Scapea.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C70FBAE62AA45F5E0047272B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					C70FBAED2AA45F5E0047272B = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C70FBAE92AA45F5E0047272B /* Build configuration list for PBXProject "Scapea" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C70FBAE52AA45F5E0047272B;
+			productRefGroup = C70FBAEF2AA45F5E0047272B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C70FBAED2AA45F5E0047272B /* Scapea */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C70FBAEC2AA45F5E0047272B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70FBAF92AA45F5F0047272B /* Preview Assets.xcassets in Resources */,
+				C70FBAF62AA45F5F0047272B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C70FBAEA2AA45F5E0047272B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7951F6A2AA48FD4006DF1E6 /* ScapeaColor.swift in Sources */,
+				C7E8406B2AA504DA00DC0926 /* SignUpViewModel.swift in Sources */,
+				C7951F7B2AA4A420006DF1E6 /* ScapeaButton.swift in Sources */,
+				C7951F662AA46787006DF1E6 /* RoundedCorner.swift in Sources */,
+				C7951F682AA48590006DF1E6 /* OnboardingProgressView.swift in Sources */,
+				C70FBAF42AA45F5E0047272B /* ContentView.swift in Sources */,
+				C7951F732AA497F1006DF1E6 /* AuthenticationViewModel.swift in Sources */,
+				C75BA7F72AA510F7002B9888 /* ResetPasswordView.swift in Sources */,
+				C7951F702AA49777006DF1E6 /* AuthenticationView.swift in Sources */,
+				C7951F752AA49E18006DF1E6 /* LoginView.swift in Sources */,
+				C75BA7F32AA50EA2002B9888 /* EmailView.swift in Sources */,
+				C7951F5D2AA463B3006DF1E6 /* OnboardingView.swift in Sources */,
+				C7951F772AA49E67006DF1E6 /* LoginViewModel.swift in Sources */,
+				C7951F622AA463F7006DF1E6 /* OnboardingStepView.swift in Sources */,
+				C7951F592AA461E1006DF1E6 /* OnboardingStep.swift in Sources */,
+				C75BA7F52AA510E4002B9888 /* OTPView.swift in Sources */,
+				C7E840692AA504A800DC0926 /* SignUpView.swift in Sources */,
+				C7951F792AA49F4A006DF1E6 /* PasswordField.swift in Sources */,
+				C7951F6C2AA49459006DF1E6 /* ScapeaImage.swift in Sources */,
+				C7E840702AA50A3100DC0926 /* ForgotPasswordView.swift in Sources */,
+				C75BA7F12AA50E42002B9888 /* ForgotPasswordViewModel.swift in Sources */,
+				C70FBAF22AA45F5E0047272B /* ScapeaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C70FBAFA2AA45F5F0047272B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C70FBAFB2AA45F5F0047272B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C70FBAFD2AA45F5F0047272B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Scapea/Preview Content\"";
+				DEVELOPMENT_TEAM = 255PJ663UF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.C2T.Scapea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C70FBAFE2AA45F5F0047272B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Scapea/Preview Content\"";
+				DEVELOPMENT_TEAM = 255PJ663UF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.C2T.Scapea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C70FBAE92AA45F5E0047272B /* Build configuration list for PBXProject "Scapea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C70FBAFA2AA45F5F0047272B /* Debug */,
+				C70FBAFB2AA45F5F0047272B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C70FBAFC2AA45F5F0047272B /* Build configuration list for PBXNativeTarget "Scapea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C70FBAFD2AA45F5F0047272B /* Debug */,
+				C70FBAFE2AA45F5F0047272B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C70FBAE62AA45F5E0047272B /* Project object */;
+}
