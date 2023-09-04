@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ResetPasswordView: View {
     
-    @EnvironmentObject var authenticationViewModel: AuthenticationViewModel
+    @EnvironmentObject var loginViewModel: LoginViewModel
     @EnvironmentObject var forgotPasswordViewModel: ForgotPasswordViewModel
     
     var body: some View {
@@ -27,9 +27,15 @@ struct ResetPasswordView: View {
             
             Spacer()
             
-            ScapeaButton(title: "Done", showProgress: $forgotPasswordViewModel.showResetPasswordprogress) {
-                // Go to Login
-                authenticationViewModel.showForgotPassword = false
+            ScapeaButton(title: "Done", showProgress: $forgotPasswordViewModel.showResetPasswordProgress) {
+                forgotPasswordViewModel.resetPassword { success in
+                    if success {
+                        // Go to Login
+                        loginViewModel.showForgotPassword = false
+                    } else {
+                        // Show error, couldn't reset password
+                    }
+                }
             }
         }
         .padding()
@@ -39,7 +45,7 @@ struct ResetPasswordView: View {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
                     // Dismiss Forgot password
-                    authenticationViewModel.showForgotPassword = false
+                    loginViewModel.showForgotPassword = false
                 } label: {
                     Image(systemName: "xmark")
                 }
@@ -52,6 +58,6 @@ struct ResetPasswordView_Previews: PreviewProvider {
     static var previews: some View {
         ResetPasswordView()
             .environmentObject(ForgotPasswordViewModel())
-            .environmentObject(AuthenticationViewModel())
+            .environmentObject(LoginViewModel())
     }
 }

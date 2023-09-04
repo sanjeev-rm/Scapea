@@ -12,7 +12,7 @@ struct LoginView: View {
     @EnvironmentObject var authenticationViewModel: AuthenticationViewModel
     @EnvironmentObject var forgotPasswordViewModel: ForgotPasswordViewModel
     
-    @StateObject var loginViewModel = LoginViewModel()
+    @EnvironmentObject var loginViewModel: LoginViewModel
     
     var body: some View {
         VStack(alignment: .leading, spacing: 32) {
@@ -25,12 +25,11 @@ struct LoginView: View {
             loginAndSignUpButton
         }
         .padding()
-        .fullScreenCover(isPresented: $authenticationViewModel.showForgotPassword) {
+        .fullScreenCover(isPresented: $loginViewModel.showForgotPassword) {
             forgotPasswordViewModel.allToDefault()
         } content: {
             ForgotPasswordView()
         }
-
     }
 }
 
@@ -60,7 +59,7 @@ extension LoginView {
             
             Button {
                 // Show Forgot Password
-                authenticationViewModel.showForgotPassword = true
+                loginViewModel.showForgotPassword = true
             } label: {
                 Text("Forgot Password?")
                     .font(.footnote)
@@ -76,7 +75,14 @@ extension LoginView {
             
             ScapeaButton(title: "Login", showProgress: $loginViewModel.showProgress) {
                 // Go to dashboard
-                loginViewModel.showProgress.toggle()
+                loginViewModel.login { succes in
+                    if succes {
+                        // Go to dashboard
+                        authenticationViewModel.isLoggedIn = true
+                    } else {
+                        // Show error, couldn't login
+                    }
+                }
             }
             
             Button {
@@ -103,5 +109,7 @@ struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
             .environmentObject(AuthenticationViewModel())
+            .environmentObject(ForgotPasswordViewModel())
+            .environmentObject(LoginViewModel())
     }
 }

@@ -9,8 +9,14 @@ import SwiftUI
 
 struct ScapeaButton: View {
     var title: AttributedString
+    var style: Style = .basic
     @Binding var showProgress: Bool
     var action: () -> Void
+    
+    enum Style {
+        case basic
+        case destructive
+    }
     
     var body: some View {
         ZStack {
@@ -29,9 +35,9 @@ struct ScapeaButton: View {
         }
         .frame(height: 22)
         .font(.title3.bold())
-        .foregroundColor(Color(.white))
+        .foregroundColor((style == .basic) ? Color.white : Color(.systemRed).opacity(0.8))
         .padding()
-        .background(Color.accentColor)
+        .background((style == .basic) ? Color.accentColor : Color(uiColor: .systemGray6))
         .clipShape(RoundedRectangle(cornerRadius: 16))
     }
 }

@@ -1,23 +1,22 @@
 //
-//  OTPView.swift
+//  SignUpOtpView.swift
 //  Scapea
 //
-//  Created by Sanjeev RM on 04/09/23.
+//  Created by Sanjeev RM on 05/09/23.
 //
 
 import SwiftUI
 
-struct OTPView: View {
-    
-    @EnvironmentObject var loginViewModel: LoginViewModel
-    @EnvironmentObject var forgotPasswordViewModel: ForgotPasswordViewModel
+struct SignUpOtpView: View {
+    @EnvironmentObject var authenticationViewModel: AuthenticationViewModel
+    @EnvironmentObject var signUpViewModel: SignUpViewModel
     
     var body: some View {
         VStack(alignment: .leading, spacing: 32) {
             
             VStack(spacing: 16) {
                 
-                TextField("OTP", text: $forgotPasswordViewModel.otp)
+                TextField("OTP", text: $signUpViewModel.otp)
                     .padding()
                     .background(Color(scapeaColor: .textFieldBackground))
                     .clipShape(RoundedRectangle(cornerRadius: 16))
@@ -38,40 +37,30 @@ struct OTPView: View {
             
             Spacer()
             
-            ScapeaButton(title: "Next", showProgress: $forgotPasswordViewModel.showOtpProgress) {
-                // Go to Reset password
-                forgotPasswordViewModel.verifyOtp()
+            ScapeaButton(title: "Next", showProgress: $signUpViewModel.showOtpProgress) {
+                // Go to Selecting Avatar
+                signUpViewModel.verifyOtp()
             }
         }
         .padding()
         .navigationTitle("Enter OTP")
         .navigationBarBackButtonHidden()
         .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button {
-                    // Dismiss Forgot password
-                    loginViewModel.showForgotPassword = false
-                } label: {
-                    Image(systemName: "xmark")
-                }
-            }
-            
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
-                    forgotPasswordViewModel.presentingOtpView = false
+                    signUpViewModel.presentingOtpView = false
                 } label: {
                     Image(systemName: "chevron.left")
                 }
-
             }
         }
     }
 }
 
-struct OTPView_Previews: PreviewProvider {
+struct SignUpOtpView_Previews: PreviewProvider {
     static var previews: some View {
-        OTPView()
-            .environmentObject(ForgotPasswordViewModel())
-            .environmentObject(LoginViewModel())
+        SignUpOtpView()
+            .environmentObject(AuthenticationViewModel())
+            .environmentObject(SignUpViewModel())
     }
 }

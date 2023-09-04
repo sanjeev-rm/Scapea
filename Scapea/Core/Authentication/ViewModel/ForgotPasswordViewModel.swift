@@ -19,7 +19,7 @@ class ForgotPasswordViewModel: ObservableObject {
     
     @Published var showEmailProgress: Bool = false
     @Published var showOtpProgress: Bool = false
-    @Published var showResetPasswordprogress: Bool = false
+    @Published var showResetPasswordProgress: Bool = false
     
     func allToDefault() {
         email = ""
@@ -28,5 +28,33 @@ class ForgotPasswordViewModel: ObservableObject {
         confirmPassword = ""
         presentingOtpView = false
         presentingResetPasswordView = false
+    }
+    
+    func verifyAndSendOtp() {
+        showEmailProgress = true
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+            self.showEmailProgress = false
+            self.presentingOtpView = true
+        }
+    }
+    
+    func verifyOtp() {
+        showOtpProgress = true
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+            self.showOtpProgress = false
+            self.presentingResetPasswordView = true
+        }
+    }
+    
+    func resetPassword(completion: @escaping (Bool) -> Void) {
+        showResetPasswordProgress = true
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+            self.allToDefault()
+            self.showResetPasswordProgress = false
+            completion(true)
+        }
     }
 }

@@ -13,13 +13,20 @@ struct ScapeaApp: App {
     @StateObject var authenticationViewModel = AuthenticationViewModel()
     @StateObject var forgotPassowrdViewModel = ForgotPasswordViewModel()
     @StateObject var signUpViewModel = SignUpViewModel()
+    @StateObject var loginViewModel = LoginViewModel()
     
     var body: some Scene {
         WindowGroup {
-            AuthenticationView()
-                .environmentObject(authenticationViewModel)
-                .environmentObject(forgotPassowrdViewModel)
-                .environmentObject(signUpViewModel)
+            if authenticationViewModel.isLoggedIn {
+                DashboardView()
+                    .environmentObject(authenticationViewModel)
+            } else {
+                AuthenticationView()
+                    .environmentObject(authenticationViewModel)
+                    .environmentObject(forgotPassowrdViewModel)
+                    .environmentObject(signUpViewModel)
+                    .environmentObject(loginViewModel)
+            }
         }
     }
 }

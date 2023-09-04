@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EmailView: View {
     
-    @EnvironmentObject var authenticationViewModel: AuthenticationViewModel
+    @EnvironmentObject var loginViewModel: LoginViewModel
     @EnvironmentObject var forgotPasswordViewModel: ForgotPasswordViewModel
     
     var body: some View {
@@ -31,7 +31,7 @@ struct EmailView: View {
             
             ScapeaButton(title: "Next", showProgress: $forgotPasswordViewModel.showEmailProgress) {
                 // Go to OTP verification
-                forgotPasswordViewModel.presentingOtpView = true
+                forgotPasswordViewModel.verifyAndSendOtp()
             }
         }
         .padding()
@@ -40,7 +40,7 @@ struct EmailView: View {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
                     // Dismiss Forgot password
-                    authenticationViewModel.showForgotPassword = false
+                    loginViewModel.showForgotPassword = false
                 } label: {
                     Image(systemName: "xmark")
                 }
@@ -53,5 +53,6 @@ struct EmailView_Previews: PreviewProvider {
     static var previews: some View {
         EmailView()
             .environmentObject(ForgotPasswordViewModel())
+            .environmentObject(LoginViewModel())
     }
 }

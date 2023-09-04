@@ -11,28 +11,36 @@ struct SignUpView: View {
     
     @EnvironmentObject var authenticationViewModel: AuthenticationViewModel
     
-    @StateObject var signUpViewModel = SignUpViewModel()
+    @EnvironmentObject var signUpViewModel: SignUpViewModel
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 32) {
-            title
-            
-            GeometryReader { geometry in
-                ScrollView(showsIndicators: false) {
-                    VStack(spacing: 32) {
-                        inputFields
-                        
-                        Spacer()
-                        
-                        verifyAndloginButton
+        NavigationStack {
+            VStack(alignment: .leading, spacing: 32) {
+                title
+                
+                GeometryReader { geometry in
+                    ScrollView(showsIndicators: false) {
+                        VStack(spacing: 32) {
+                            inputFields
+                            
+                            Spacer()
+                            
+                            continueAndloginButton
+                        }
+                        .frame(minHeight: geometry.size.height)
                     }
-                    .frame(minHeight: geometry.size.height)
+                    .frame(width: geometry.size.width)
+                    .scrollBounceBehavior(.basedOnSize)
                 }
-                .frame(width: geometry.size.width)
-                .scrollBounceBehavior(.basedOnSize)
+            }
+            .padding()
+            .navigationDestination(isPresented: $signUpViewModel.presentingOtpView) {
+                SignUpOtpView()
+            }
+            .navigationDestination(isPresented: $signUpViewModel.presentingAvatarView) {
+                SelectYourAvatarView()
             }
         }
-        .padding()
     }
 }
 
@@ -79,11 +87,12 @@ extension SignUpView {
         .clipShape(RoundedRectangle(cornerRadius: 16))
     }
     
-    private var verifyAndloginButton: some View {
+    private var continueAndloginButton: some View {
         VStack(spacing: 16) {
             
-            ScapeaButton(title: "Verify", showProgress: $signUpViewModel.showProgress) {
+            ScapeaButton(title: "Continue", showProgress: $signUpViewModel.showInitialProgress) {
                 // Go to verify OTP verification view
+                signUpViewModel.verifyAndSendOtp()
             }
             
             Button {
@@ -110,5 +119,6 @@ struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
         SignUpView()
             .environmentObject(AuthenticationViewModel())
+            .environmentObject(SignUpViewModel())
     }
 }

@@ -77,6 +77,7 @@ extension OnboardingView {
                 .foregroundColor(.black)
                 .font(.title.bold())
                 .padding(22)
+                .frame(width: 64, height: 64)
                 .background(Color.white)
                 .clipShape(Circle())
         }
