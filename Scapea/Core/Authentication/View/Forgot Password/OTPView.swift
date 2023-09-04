@@ -15,10 +15,6 @@ struct OTPView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 32) {
             
-//            Text("Enter OTP")
-//                .font(.title3.bold())
-//                .frame(maxWidth: .infinity)
-            
             VStack(spacing: 16) {
                 
                 TextField("OTP", text: $forgotPasswordViewModel.otp)
@@ -42,13 +38,12 @@ struct OTPView: View {
             
             Spacer()
             
-            ScapeaButton(title: "Next") {
+            ScapeaButton(title: "Next", showProgress: $forgotPasswordViewModel.showOtpProgress) {
                 // Go to Reset password
                 forgotPasswordViewModel.presentingResetPasswordView = true
             }
         }
-        .padding(22)
-//        .padding(.top, 32)
+        .padding()
         .navigationTitle("Enter OTP")
         .navigationBarBackButtonHidden()
         .toolbar {

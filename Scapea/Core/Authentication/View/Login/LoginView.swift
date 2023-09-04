@@ -24,7 +24,7 @@ struct LoginView: View {
             
             loginAndSignUpButton
         }
-        .padding(22)
+        .padding()
         .fullScreenCover(isPresented: $authenticationViewModel.showForgotPassword) {
             forgotPasswordViewModel.allToDefault()
         } content: {
@@ -74,8 +74,9 @@ extension LoginView {
     private var loginAndSignUpButton: some View {
         VStack(spacing: 16) {
             
-            ScapeaButton(title: "Login") {
+            ScapeaButton(title: "Login", showProgress: $loginViewModel.showProgress) {
                 // Go to dashboard
+                loginViewModel.showProgress.toggle()
             }
             
             Button {

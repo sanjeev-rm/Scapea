@@ -15,10 +15,6 @@ struct EmailView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 32) {
             
-//            Text("Enter Email")
-//                .font(.title3.bold())
-//                .frame(maxWidth: .infinity)
-            
             VStack(spacing: 16) {
                 
                 TextField("Email", text: $forgotPasswordViewModel.email)
@@ -33,13 +29,12 @@ struct EmailView: View {
             
             Spacer()
             
-            ScapeaButton(title: "Next") {
+            ScapeaButton(title: "Next", showProgress: $forgotPasswordViewModel.showEmailProgress) {
                 // Go to OTP verification
                 forgotPasswordViewModel.presentingOtpView = true
             }
         }
-        .padding(22)
-//        .padding(.top, 32)
+        .padding()
         .navigationTitle("Enter Email")
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {

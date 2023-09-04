@@ -10,4 +10,6 @@ import Foundation
 class LoginViewModel: ObservableObject {
     @Published var username: String = ""
     @Published var password: String = ""
+    
+    @Published var showProgress: Bool = false
 }

@@ -32,7 +32,7 @@ struct SignUpView: View {
                 .scrollBounceBehavior(.basedOnSize)
             }
         }
-        .padding(22)
+        .padding()
     }
 }
 
@@ -82,7 +82,7 @@ extension SignUpView {
     private var verifyAndloginButton: some View {
         VStack(spacing: 16) {
             
-            ScapeaButton(title: "Verify") {
+            ScapeaButton(title: "Verify", showProgress: $signUpViewModel.showProgress) {
                 // Go to verify OTP verification view
             }
             

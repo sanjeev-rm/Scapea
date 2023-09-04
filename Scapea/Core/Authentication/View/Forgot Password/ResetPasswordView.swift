@@ -15,10 +15,6 @@ struct ResetPasswordView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 32) {
             
-//            Text("Reset Password")
-//                .font(.title3.bold())
-//                .frame(maxWidth: .infinity)
-            
             VStack(spacing: 16) {
                 PasswordField(title: "New Password", password: $forgotPasswordViewModel.password)
                 Divider()
@@ -31,13 +27,12 @@ struct ResetPasswordView: View {
             
             Spacer()
             
-            ScapeaButton(title: "Done") {
+            ScapeaButton(title: "Done", showProgress: $forgotPasswordViewModel.showResetPasswordprogress) {
                 // Go to Login
                 authenticationViewModel.showForgotPassword = false
             }
         }
-        .padding(22)
-//        .padding(.top, 32)
+        .padding()
         .navigationTitle("Reset Password")
         .navigationBarBackButtonHidden()
         .toolbar {

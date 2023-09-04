@@ -17,6 +17,10 @@ class ForgotPasswordViewModel: ObservableObject {
     @Published var presentingOtpView: Bool = false
     @Published var presentingResetPasswordView: Bool = false
     
+    @Published var showEmailProgress: Bool = false
+    @Published var showOtpProgress: Bool = false
+    @Published var showResetPasswordprogress: Bool = false
+    
     func allToDefault() {
         email = ""
         otp = ""
