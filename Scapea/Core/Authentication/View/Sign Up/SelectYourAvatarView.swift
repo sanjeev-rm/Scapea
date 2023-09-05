@@ -16,19 +16,19 @@ struct SelectYourAvatarView: View {
         VStack {
             VStack(spacing: 32) {
                 HStack(spacing: 32) {
-                    Circle()
-                    Circle()
-                    Circle()
+                    AvatarView()
+                    AvatarView()
+                    AvatarView()
                 }
                 HStack(spacing: 32) {
-                    Circle()
-                    Circle()
-                    Circle()
+                    AvatarView()
+                    AvatarView()
+                    AvatarView()
                 }
                 HStack(spacing: 32) {
-                    Circle()
-                    Circle()
-                    Circle()
+                    AvatarView()
+                    AvatarView()
+                    AvatarView()
                 }
             }
             .foregroundColor(.gray.opacity(0.7))

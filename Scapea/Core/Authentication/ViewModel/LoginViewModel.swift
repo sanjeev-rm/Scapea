@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class LoginViewModel: ObservableObject {
     @Published var username: String = ""
@@ -15,11 +16,21 @@ class LoginViewModel: ObservableObject {
     
     @Published var showForgotPassword: Bool = false
     
+    @Published var showUpdatedPasswordAlert: Bool = false
+    
     func allToDefault() {
         username = ""
         password = ""
         showProgress = false
         showForgotPassword = false
+    }
+    
+    func toggleShowUpdatedPasswordAlert() {
+        withAnimation(.easeInOut) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                self.showUpdatedPasswordAlert = !self.showUpdatedPasswordAlert
+            }
+        }
     }
     
     func login(completion: @escaping (Bool) -> Void) {

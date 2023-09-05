@@ -9,26 +9,33 @@ import SwiftUI
 
 struct DashboardView: View {
     
-    @EnvironmentObject var authenticationViewModel: AuthenticationViewModel
-    @State var showProgress: Bool = false
+    @State private var currentTab = 2
+    
     var body: some View {
-        VStack {
-            Text("Hello, World!")
-                .font(.system(size: 27, weight: .ultraLight, design: .monospaced))
+        TabView(selection: $currentTab) {
+            ProfileView()
+                .tabItem {
+                    Image(systemName: "person")
+                }
+                .tag(1)
             
-            ScapeaButton(title: "Log out", style: .destructive, showProgress: $showProgress) {
-                // Log out, Go to login page
-                authenticationViewModel.isLoggedIn = false
-                authenticationViewModel.showSignUp = false
-            }
+            HomeView()
+                .tabItem {
+                    Image(systemName: "house")
+                }
+                .tag(2)
+            
+            SettingsView()
+                .tabItem {
+                    Image(systemName: "gear")
+                }
+                .tag(3)
         }
-        .padding()
     }
 }
 
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
         DashboardView()
-            .environmentObject(AuthenticationViewModel())
     }
 }

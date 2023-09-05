@@ -32,6 +32,7 @@ struct ResetPasswordView: View {
                     if success {
                         // Go to Login
                         loginViewModel.showForgotPassword = false
+                        loginViewModel.toggleShowUpdatedPasswordAlert()
                     } else {
                         // Show error, couldn't reset password
                     }

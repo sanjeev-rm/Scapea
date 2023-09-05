@@ -30,6 +30,10 @@ struct LoginView: View {
         } content: {
             ForgotPasswordView()
         }
+        .sheet(isPresented: $loginViewModel.showUpdatedPasswordAlert) {
+            AlertSheetView(type: .updatedPasswordForgotPassword)
+                .presentationDetents([.height(175)])
+        }
     }
 }
 
