@@ -48,6 +48,7 @@ struct SelectYourAvatarView: View {
             }
         }
         .padding()
+        .padding(.bottom, 40)
         .navigationTitle("Select your avatar")
         .navigationBarBackButtonHidden()
     }

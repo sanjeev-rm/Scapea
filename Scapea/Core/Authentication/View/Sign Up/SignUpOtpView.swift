@@ -43,6 +43,7 @@ struct SignUpOtpView: View {
             }
         }
         .padding()
+        .padding(.bottom, 40)
         .navigationTitle("Enter OTP")
         .navigationBarBackButtonHidden()
         .toolbar {
