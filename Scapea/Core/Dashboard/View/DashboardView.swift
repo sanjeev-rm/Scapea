@@ -31,6 +31,9 @@ struct DashboardView: View {
                 }
                 .tag(3)
         }
+        .onAppear {
+            currentTab = 2
+        }
     }
 }
 

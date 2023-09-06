@@ -8,14 +8,30 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
+    @EnvironmentObject var authenticationViewModel: AuthenticationViewModel
+    
     var body: some View {
-        Text("Profile")
-            .font(.system(size: 27, weight: .ultraLight, design: .monospaced))
+        NavigationStack {
+            List {
+                Section {
+                    Button(role: .destructive) {
+                        // Log out, Go to login page
+                        authenticationViewModel.isLoggedIn = false
+                        authenticationViewModel.showSignUp = false
+                    } label: {
+                        Text("Sign Out")
+                    }
+                }
+            }
+            .navigationTitle("Profile")
+        }
     }
 }
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()
+            .environmentObject(AuthenticationViewModel())
     }
 }

@@ -32,7 +32,7 @@ struct OnboardingStepView: View {
                     .font(.body.weight(.light))
                     .multilineTextAlignment(.center)
             }
-            .foregroundColor(.black)
+            .foregroundColor(.white)
             .padding(27)
             
             Spacer()

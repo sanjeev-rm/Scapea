@@ -131,7 +131,7 @@
                                 <rect key="frame" x="136" y="344" width="121" height="164.33333333333337"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xH9-G5-P8j">
-                                        <rect key="frame" x="30.666666666666654" y="-15.333333333333329" width="59.666666666666643" height="107.66666666666666"/>
+                                        <rect key="frame" x="30.666666666666654" y="-15.333333333333329" width="59.666666666666657" height="107.66666666666666"/>
                                         <color key="tintColor" name="AccentColor"/>
                                         <imageReference key="image" image="laurel.leading" catalog="system" symbolScale="large"/>
                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="64" scale="large" weight="black"/>

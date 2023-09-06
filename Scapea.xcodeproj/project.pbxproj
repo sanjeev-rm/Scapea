@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70B6AE52AA90DFC000DED0A /* SupportEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B6AE42AA90DFC000DED0A /* SupportEmail.swift */; };
+		C70B6AE72AA90F08000DED0A /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B6AE62AA90F08000DED0A /* Bundle+Extension.swift */; };
+		C70B6AE92AA90F45000DED0A /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B6AE82AA90F45000DED0A /* SettingsViewModel.swift */; };
 		C70FBAF22AA45F5E0047272B /* ScapeaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FBAF12AA45F5E0047272B /* ScapeaApp.swift */; };
 		C70FBAF42AA45F5E0047272B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70FBAF32AA45F5E0047272B /* ContentView.swift */; };
 		C70FBAF62AA45F5F0047272B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70FBAF52AA45F5F0047272B /* Assets.xcassets */; };
@@ -43,6 +46,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C70B6AE42AA90DFC000DED0A /* SupportEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportEmail.swift; sourceTree = "<group>"; };
+		C70B6AE62AA90F08000DED0A /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		C70B6AE82AA90F45000DED0A /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		C70FBAEE2AA45F5E0047272B /* Scapea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scapea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70FBAF12AA45F5E0047272B /* ScapeaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScapeaApp.swift; sourceTree = "<group>"; };
 		C70FBAF32AA45F5E0047272B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -249,6 +255,7 @@
 		C7A7F6512AA6694B009B9A2A /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				C70B6AE82AA90F45000DED0A /* SettingsViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -256,6 +263,8 @@
 		C7A7F6532AA66967009B9A2A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C70B6AE42AA90DFC000DED0A /* SupportEmail.swift */,
+				C70B6AE62AA90F08000DED0A /* Bundle+Extension.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -369,6 +378,7 @@
 				C7951F662AA46787006DF1E6 /* RoundedCorner.swift in Sources */,
 				C7951F682AA48590006DF1E6 /* OnboardingProgressView.swift in Sources */,
 				C7208CAE2AA7BE7300F5F7D5 /* AlertSheetView.swift in Sources */,
+				C70B6AE92AA90F45000DED0A /* SettingsViewModel.swift in Sources */,
 				C70FBAF42AA45F5E0047272B /* ContentView.swift in Sources */,
 				C7951F732AA497F1006DF1E6 /* AuthenticationViewModel.swift in Sources */,
 				C7A7F6552AA66989009B9A2A /* DashboardView.swift in Sources */,
@@ -380,12 +390,14 @@
 				C7951F772AA49E67006DF1E6 /* LoginViewModel.swift in Sources */,
 				C7951F622AA463F7006DF1E6 /* OnboardingStepView.swift in Sources */,
 				C7951F592AA461E1006DF1E6 /* OnboardingStep.swift in Sources */,
+				C70B6AE72AA90F08000DED0A /* Bundle+Extension.swift in Sources */,
 				C7208CAC2AA7BAB300F5F7D5 /* SettingsView.swift in Sources */,
 				C75BA7F52AA510E4002B9888 /* OTPView.swift in Sources */,
 				C7208CA62AA7B4E900F5F7D5 /* AvatarView.swift in Sources */,
 				C7A7F64B2AA65E1B009B9A2A /* SignUpOtpView.swift in Sources */,
 				C7E840692AA504A800DC0926 /* SignUpView.swift in Sources */,
 				C7951F792AA49F4A006DF1E6 /* PasswordField.swift in Sources */,
+				C70B6AE52AA90DFC000DED0A /* SupportEmail.swift in Sources */,
 				C7951F6C2AA49459006DF1E6 /* ScapeaImage.swift in Sources */,
 				C7E840702AA50A3100DC0926 /* ForgotPasswordView.swift in Sources */,
 				C75BA7F12AA50E42002B9888 /* ForgotPasswordViewModel.swift in Sources */,
