@@ -41,20 +41,34 @@ struct SettingsView: View {
                             Text("Report a bug")
                         }
                     }
-                    
+                }
+                
+                Section("Support") {
                     Button {
                         // Give a suggestion email
                         settingsViewModel.supportSuggestionEmail.send(openURL: openURL)
                     } label: {
                         HStack(spacing: 22) {
-                            Image(systemName: "pencil.line")
+                            Image(systemName: "atom")
                                 .foregroundColor(Color(uiColor: .tertiaryLabel))
                                 .font(.title3)
                             Text("Give a suggestion")
                         }
                     }
+                    
+                    Button {
+                        // Write a review
+                    } label: {
+                        HStack(spacing: 22) {
+                            Image(systemName: "pencil.line")
+                                .foregroundColor(Color(uiColor: .tertiaryLabel))
+                                .font(.title3)
+                            Text("Write a review")
+                        }
+                    }
                 }
             }
+            .scrollBounceBehavior(.basedOnSize)
             .navigationTitle("Settings")
         }
     }

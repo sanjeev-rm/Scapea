@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70B40F52AAADB8E0048693B /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B40F42AAADB8E0048693B /* ProfileViewModel.swift */; };
+		C70B40FA2AAAE2F10048693B /* UpdateAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B40F92AAAE2F10048693B /* UpdateAvatarView.swift */; };
+		C70B40FC2AAAE3010048693B /* UpdateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B40FB2AAAE3010048693B /* UpdateUsernameView.swift */; };
+		C70B40FE2AAAE30F0048693B /* UpdatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B40FD2AAAE30F0048693B /* UpdatePasswordView.swift */; };
+		C70B41022AAB09050048693B /* ScapeaAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B41012AAB09050048693B /* ScapeaAvatar.swift */; };
 		C70B6AE52AA90DFC000DED0A /* SupportEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B6AE42AA90DFC000DED0A /* SupportEmail.swift */; };
 		C70B6AE72AA90F08000DED0A /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B6AE62AA90F08000DED0A /* Bundle+Extension.swift */; };
 		C70B6AE92AA90F45000DED0A /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B6AE82AA90F45000DED0A /* SettingsViewModel.swift */; };
@@ -46,6 +51,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C70B40F42AAADB8E0048693B /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		C70B40F92AAAE2F10048693B /* UpdateAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAvatarView.swift; sourceTree = "<group>"; };
+		C70B40FB2AAAE3010048693B /* UpdateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUsernameView.swift; sourceTree = "<group>"; };
+		C70B40FD2AAAE30F0048693B /* UpdatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordView.swift; sourceTree = "<group>"; };
+		C70B41012AAB09050048693B /* ScapeaAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScapeaAvatar.swift; sourceTree = "<group>"; };
 		C70B6AE42AA90DFC000DED0A /* SupportEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportEmail.swift; sourceTree = "<group>"; };
 		C70B6AE62AA90F08000DED0A /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		C70B6AE82AA90F45000DED0A /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
@@ -96,6 +106,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C70B40F62AAADE410048693B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C7208CA72AA7BA9C00F5F7D5 /* ProfileView.swift */,
+				C70B40F92AAAE2F10048693B /* UpdateAvatarView.swift */,
+				C70B40FB2AAAE3010048693B /* UpdateUsernameView.swift */,
+				C70B40FD2AAAE30F0048693B /* UpdatePasswordView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		C70B40F72AAADE4A0048693B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C7208CA92AA7BAA600F5F7D5 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C70B40F82AAADE520048693B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C7208CAB2AA7BAB300F5F7D5 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C70B40FF2AAB08D40048693B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7951F692AA48FD4006DF1E6 /* ScapeaColor.swift */,
+				C7951F6B2AA49458006DF1E6 /* ScapeaImage.swift */,
+				C70B41012AAB09050048693B /* ScapeaAvatar.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C70B41002AAB08DE0048693B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7951F652AA46787006DF1E6 /* RoundedCorner.swift */,
+				C7951F782AA49F4A006DF1E6 /* PasswordField.swift */,
+				C7951F7A2AA4A420006DF1E6 /* ScapeaButton.swift */,
+				C7208CAD2AA7BE7300F5F7D5 /* AlertSheetView.swift */,
+				C7208CA52AA7B4E900F5F7D5 /* AvatarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C70FBAE52AA45F5E0047272B = {
 			isa = PBXGroup;
 			children = (
@@ -202,12 +261,8 @@
 		C7951F642AA4676F006DF1E6 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				C7951F652AA46787006DF1E6 /* RoundedCorner.swift */,
-				C7951F692AA48FD4006DF1E6 /* ScapeaColor.swift */,
-				C7951F6B2AA49458006DF1E6 /* ScapeaImage.swift */,
-				C7951F782AA49F4A006DF1E6 /* PasswordField.swift */,
-				C7951F7A2AA4A420006DF1E6 /* ScapeaButton.swift */,
-				C7208CAD2AA7BE7300F5F7D5 /* AlertSheetView.swift */,
+				C70B41002AAB08DE0048693B /* View */,
+				C70B40FF2AAB08D40048693B /* Model */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -245,9 +300,9 @@
 			isa = PBXGroup;
 			children = (
 				C7A7F6542AA66989009B9A2A /* DashboardView.swift */,
-				C7208CA72AA7BA9C00F5F7D5 /* ProfileView.swift */,
-				C7208CA92AA7BAA600F5F7D5 /* HomeView.swift */,
-				C7208CAB2AA7BAB300F5F7D5 /* SettingsView.swift */,
+				C70B40F82AAADE520048693B /* Settings */,
+				C70B40F72AAADE4A0048693B /* Home */,
+				C70B40F62AAADE410048693B /* Profile */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -256,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				C70B6AE82AA90F45000DED0A /* SettingsViewModel.swift */,
+				C70B40F42AAADB8E0048693B /* ProfileViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -283,7 +339,6 @@
 				C7E840682AA504A800DC0926 /* SignUpView.swift */,
 				C7A7F64A2AA65E1B009B9A2A /* SignUpOtpView.swift */,
 				C7A7F64C2AA66014009B9A2A /* SelectYourAvatarView.swift */,
-				C7208CA52AA7B4E900F5F7D5 /* AvatarView.swift */,
 			);
 			path = "Sign Up";
 			sourceTree = "<group>";
@@ -379,9 +434,11 @@
 				C7951F682AA48590006DF1E6 /* OnboardingProgressView.swift in Sources */,
 				C7208CAE2AA7BE7300F5F7D5 /* AlertSheetView.swift in Sources */,
 				C70B6AE92AA90F45000DED0A /* SettingsViewModel.swift in Sources */,
+				C70B40FC2AAAE3010048693B /* UpdateUsernameView.swift in Sources */,
 				C70FBAF42AA45F5E0047272B /* ContentView.swift in Sources */,
 				C7951F732AA497F1006DF1E6 /* AuthenticationViewModel.swift in Sources */,
 				C7A7F6552AA66989009B9A2A /* DashboardView.swift in Sources */,
+				C70B41022AAB09050048693B /* ScapeaAvatar.swift in Sources */,
 				C75BA7F72AA510F7002B9888 /* ResetPasswordView.swift in Sources */,
 				C7951F702AA49777006DF1E6 /* AuthenticationView.swift in Sources */,
 				C7951F752AA49E18006DF1E6 /* LoginView.swift in Sources */,
@@ -390,16 +447,19 @@
 				C7951F772AA49E67006DF1E6 /* LoginViewModel.swift in Sources */,
 				C7951F622AA463F7006DF1E6 /* OnboardingStepView.swift in Sources */,
 				C7951F592AA461E1006DF1E6 /* OnboardingStep.swift in Sources */,
+				C70B40FE2AAAE30F0048693B /* UpdatePasswordView.swift in Sources */,
 				C70B6AE72AA90F08000DED0A /* Bundle+Extension.swift in Sources */,
 				C7208CAC2AA7BAB300F5F7D5 /* SettingsView.swift in Sources */,
 				C75BA7F52AA510E4002B9888 /* OTPView.swift in Sources */,
 				C7208CA62AA7B4E900F5F7D5 /* AvatarView.swift in Sources */,
 				C7A7F64B2AA65E1B009B9A2A /* SignUpOtpView.swift in Sources */,
 				C7E840692AA504A800DC0926 /* SignUpView.swift in Sources */,
+				C70B40FA2AAAE2F10048693B /* UpdateAvatarView.swift in Sources */,
 				C7951F792AA49F4A006DF1E6 /* PasswordField.swift in Sources */,
 				C70B6AE52AA90DFC000DED0A /* SupportEmail.swift in Sources */,
 				C7951F6C2AA49459006DF1E6 /* ScapeaImage.swift in Sources */,
 				C7E840702AA50A3100DC0926 /* ForgotPasswordView.swift in Sources */,
+				C70B40F52AAADB8E0048693B /* ProfileViewModel.swift in Sources */,
 				C75BA7F12AA50E42002B9888 /* ForgotPasswordViewModel.swift in Sources */,
 				C7A7F64D2AA66014009B9A2A /* SelectYourAvatarView.swift in Sources */,
 				C70FBAF22AA45F5E0047272B /* ScapeaApp.swift in Sources */,

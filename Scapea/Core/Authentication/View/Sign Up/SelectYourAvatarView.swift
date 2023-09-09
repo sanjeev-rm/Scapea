@@ -13,26 +13,24 @@ struct SelectYourAvatarView: View {
     @EnvironmentObject var signUpViewModel: SignUpViewModel
     
     var body: some View {
-        VStack {
+        VStack(spacing: 32) {
             VStack(spacing: 32) {
                 HStack(spacing: 32) {
-                    AvatarView()
-                    AvatarView()
-                    AvatarView()
+                    AvatarView(scapeaAvatar: .one, currentlySelectedAvatar: $signUpViewModel.selectedAvatar)
+                    AvatarView(scapeaAvatar: .two, currentlySelectedAvatar: $signUpViewModel.selectedAvatar)
+                    AvatarView(scapeaAvatar: .three, currentlySelectedAvatar: $signUpViewModel.selectedAvatar)
                 }
                 HStack(spacing: 32) {
-                    AvatarView()
-                    AvatarView()
-                    AvatarView()
+                    AvatarView(scapeaAvatar: .four, currentlySelectedAvatar: $signUpViewModel.selectedAvatar)
+                    AvatarView(scapeaAvatar: .five, currentlySelectedAvatar: $signUpViewModel.selectedAvatar)
+                    AvatarView(scapeaAvatar: .six, currentlySelectedAvatar: $signUpViewModel.selectedAvatar)
                 }
                 HStack(spacing: 32) {
-                    AvatarView()
-                    AvatarView()
-                    AvatarView()
+                    AvatarView(scapeaAvatar: .seven, currentlySelectedAvatar: $signUpViewModel.selectedAvatar)
+                    AvatarView(scapeaAvatar: .eight, currentlySelectedAvatar: $signUpViewModel.selectedAvatar)
+                    AvatarView(scapeaAvatar: .nine, currentlySelectedAvatar: $signUpViewModel.selectedAvatar)
                 }
             }
-            .foregroundColor(.gray.opacity(0.7))
-            .padding()
             
             Spacer()
             

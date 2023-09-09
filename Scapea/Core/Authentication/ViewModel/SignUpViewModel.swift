@@ -16,6 +16,8 @@ class SignUpViewModel: ObservableObject {
     
     @Published var otp: String = ""
     
+    @Published var selectedAvatar: ScapeaAvatar = .one
+    
     @Published var presentingOtpView: Bool = false
     @Published var presentingAvatarView: Bool = false
     
