@@ -42,6 +42,10 @@ struct SettingsView: View {
                         }
                     }
                 }
+                .listRowBackground(
+                    Color.clear
+                        .background(.ultraThinMaterial)
+                )
                 
                 Section("Support") {
                     Button {
@@ -67,7 +71,16 @@ struct SettingsView: View {
                         }
                     }
                 }
+                .listRowBackground(
+                    Color.clear
+                        .background(.ultraThinMaterial)
+                )
             }
+            .scrollContentBackground(.hidden)
+            .background(
+                AngularGradient(colors: [Color(.systemGreen), Color(.systemFill)], center: .bottomTrailing)
+                    .ignoresSafeArea()
+            )
             .scrollBounceBehavior(.basedOnSize)
             .navigationTitle("Settings")
         }

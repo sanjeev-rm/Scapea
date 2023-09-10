@@ -25,6 +25,11 @@ struct ProfileView: View {
                 signOutSection
             }
             .disabled(profileViewModel.fetchingUserProfile)
+            .scrollContentBackground(.hidden)
+            .background(
+                AngularGradient(colors: [Color(.systemGreen), Color(.systemFill)], center: .bottomTrailing)
+                    .ignoresSafeArea()
+            )
             .scrollBounceBehavior(.basedOnSize)
             .navigationTitle("Profile")
             .toolbar {
@@ -76,7 +81,7 @@ extension ProfileView {
                 Spacer()
             }
         }
-        .listRowBackground(EmptyView())
+        .listRowBackground(Color.clear)
     }
     
     private var usernameAndEmailSection: some View {
@@ -104,6 +109,10 @@ extension ProfileView {
                     .redacted(reason: profileViewModel.fetchingUserProfile ? .placeholder : [])
             }
         }
+        .listRowBackground(
+            Color.clear
+                .background(.ultraThinMaterial)
+        )
     }
     
     private var updatePasswordSection: some View {
@@ -119,6 +128,10 @@ extension ProfileView {
                 }
             }
         }
+        .listRowBackground(
+            Color.clear
+                .background(.ultraThinMaterial)
+        )
     }
     
     private var signOutSection: some View {
@@ -133,6 +146,10 @@ extension ProfileView {
                 Text("Sign Out")
             }
         }
+        .listRowBackground(
+            Color.clear
+                .background(.ultraThinMaterial)
+        )
     }
 }
 

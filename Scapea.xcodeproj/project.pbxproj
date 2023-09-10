@@ -12,6 +12,11 @@
 		C70B40FC2AAAE3010048693B /* UpdateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B40FB2AAAE3010048693B /* UpdateUsernameView.swift */; };
 		C70B40FE2AAAE30F0048693B /* UpdatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B40FD2AAAE30F0048693B /* UpdatePasswordView.swift */; };
 		C70B41022AAB09050048693B /* ScapeaAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B41012AAB09050048693B /* ScapeaAvatar.swift */; };
+		C70B41062AADC1360048693B /* ScapeaAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B41052AADC1360048693B /* ScapeaAction.swift */; };
+		C70B41082AADC22A0048693B /* ActionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B41072AADC22A0048693B /* ActionCardView.swift */; };
+		C70B410A2AAE0B140048693B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B41092AAE0B140048693B /* HomeViewModel.swift */; };
+		C70B410C2AAE0BA00048693B /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B410B2AAE0BA00048693B /* ARView.swift */; };
+		C70B410E2AAE0BB80048693B /* TriviaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B410D2AAE0BB80048693B /* TriviaView.swift */; };
 		C70B6AE52AA90DFC000DED0A /* SupportEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B6AE42AA90DFC000DED0A /* SupportEmail.swift */; };
 		C70B6AE72AA90F08000DED0A /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B6AE62AA90F08000DED0A /* Bundle+Extension.swift */; };
 		C70B6AE92AA90F45000DED0A /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B6AE82AA90F45000DED0A /* SettingsViewModel.swift */; };
@@ -56,6 +61,11 @@
 		C70B40FB2AAAE3010048693B /* UpdateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUsernameView.swift; sourceTree = "<group>"; };
 		C70B40FD2AAAE30F0048693B /* UpdatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordView.swift; sourceTree = "<group>"; };
 		C70B41012AAB09050048693B /* ScapeaAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScapeaAvatar.swift; sourceTree = "<group>"; };
+		C70B41052AADC1360048693B /* ScapeaAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScapeaAction.swift; sourceTree = "<group>"; };
+		C70B41072AADC22A0048693B /* ActionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCardView.swift; sourceTree = "<group>"; };
+		C70B41092AAE0B140048693B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C70B410B2AAE0BA00048693B /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
+		C70B410D2AAE0BB80048693B /* TriviaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaView.swift; sourceTree = "<group>"; };
 		C70B6AE42AA90DFC000DED0A /* SupportEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportEmail.swift; sourceTree = "<group>"; };
 		C70B6AE62AA90F08000DED0A /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		C70B6AE82AA90F45000DED0A /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
@@ -121,6 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				C7208CA92AA7BAA600F5F7D5 /* HomeView.swift */,
+				C70B41072AADC22A0048693B /* ActionCardView.swift */,
+				C70B410B2AAE0BA00048693B /* ARView.swift */,
+				C70B410D2AAE0BB80048693B /* TriviaView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -312,6 +325,7 @@
 			children = (
 				C70B6AE82AA90F45000DED0A /* SettingsViewModel.swift */,
 				C70B40F42AAADB8E0048693B /* ProfileViewModel.swift */,
+				C70B41092AAE0B140048693B /* HomeViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -321,6 +335,7 @@
 			children = (
 				C70B6AE42AA90DFC000DED0A /* SupportEmail.swift */,
 				C70B6AE62AA90F08000DED0A /* Bundle+Extension.swift */,
+				C70B41052AADC1360048693B /* ScapeaAction.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -438,6 +453,7 @@
 				C70FBAF42AA45F5E0047272B /* ContentView.swift in Sources */,
 				C7951F732AA497F1006DF1E6 /* AuthenticationViewModel.swift in Sources */,
 				C7A7F6552AA66989009B9A2A /* DashboardView.swift in Sources */,
+				C70B410E2AAE0BB80048693B /* TriviaView.swift in Sources */,
 				C70B41022AAB09050048693B /* ScapeaAvatar.swift in Sources */,
 				C75BA7F72AA510F7002B9888 /* ResetPasswordView.swift in Sources */,
 				C7951F702AA49777006DF1E6 /* AuthenticationView.swift in Sources */,
@@ -447,12 +463,16 @@
 				C7951F772AA49E67006DF1E6 /* LoginViewModel.swift in Sources */,
 				C7951F622AA463F7006DF1E6 /* OnboardingStepView.swift in Sources */,
 				C7951F592AA461E1006DF1E6 /* OnboardingStep.swift in Sources */,
+				C70B410A2AAE0B140048693B /* HomeViewModel.swift in Sources */,
+				C70B410C2AAE0BA00048693B /* ARView.swift in Sources */,
 				C70B40FE2AAAE30F0048693B /* UpdatePasswordView.swift in Sources */,
 				C70B6AE72AA90F08000DED0A /* Bundle+Extension.swift in Sources */,
+				C70B41062AADC1360048693B /* ScapeaAction.swift in Sources */,
 				C7208CAC2AA7BAB300F5F7D5 /* SettingsView.swift in Sources */,
 				C75BA7F52AA510E4002B9888 /* OTPView.swift in Sources */,
 				C7208CA62AA7B4E900F5F7D5 /* AvatarView.swift in Sources */,
 				C7A7F64B2AA65E1B009B9A2A /* SignUpOtpView.swift in Sources */,
+				C70B41082AADC22A0048693B /* ActionCardView.swift in Sources */,
 				C7E840692AA504A800DC0926 /* SignUpView.swift in Sources */,
 				C70B40FA2AAAE2F10048693B /* UpdateAvatarView.swift in Sources */,
 				C7951F792AA49F4A006DF1E6 /* PasswordField.swift in Sources */,
