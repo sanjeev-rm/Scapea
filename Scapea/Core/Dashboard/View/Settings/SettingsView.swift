@@ -16,65 +16,9 @@ struct SettingsView: View {
     var body: some View {
         NavigationStack {
             List {
-                Section("Contact") {
-                    
-                    Button {
-                        // Get help email
-                        settingsViewModel.supportHelpEmail.send(openURL: openURL)
-                    } label: {
-                        HStack(spacing: 22) {
-                            Image(systemName: "waveform.path.ecg")
-                                .foregroundColor(Color(uiColor: .tertiaryLabel))
-                                .font(.title3)
-                            Text("Help")
-                        }
-                    }
-                    
-                    Button {
-                        // Report a bug mail
-                        settingsViewModel.supportBugEmail.send(openURL: openURL)
-                    } label: {
-                        HStack(spacing: 22) {
-                            Image(systemName: "ant.fill")
-                                .foregroundColor(Color(uiColor: .tertiaryLabel))
-                                .font(.title3)
-                            Text("Report a bug")
-                        }
-                    }
-                }
-                .listRowBackground(
-                    Color.clear
-                        .background(.ultraThinMaterial)
-                )
+                contactSection
                 
-                Section("Support") {
-                    Button {
-                        // Give a suggestion email
-                        settingsViewModel.supportSuggestionEmail.send(openURL: openURL)
-                    } label: {
-                        HStack(spacing: 22) {
-                            Image(systemName: "atom")
-                                .foregroundColor(Color(uiColor: .tertiaryLabel))
-                                .font(.title3)
-                            Text("Give a suggestion")
-                        }
-                    }
-                    
-                    Button {
-                        // Write a review
-                    } label: {
-                        HStack(spacing: 22) {
-                            Image(systemName: "pencil.line")
-                                .foregroundColor(Color(uiColor: .tertiaryLabel))
-                                .font(.title3)
-                            Text("Write a review")
-                        }
-                    }
-                }
-                .listRowBackground(
-                    Color.clear
-                        .background(.ultraThinMaterial)
-                )
+                supportSection
             }
             .scrollContentBackground(.hidden)
             .background(
@@ -84,6 +28,75 @@ struct SettingsView: View {
             .scrollBounceBehavior(.basedOnSize)
             .navigationTitle("Settings")
         }
+    }
+}
+
+
+
+extension SettingsView {
+    
+    private var contactSection: some View {
+        Section("Contact") {
+            
+            Button {
+                // Get help email
+                settingsViewModel.supportHelpEmail.send(openURL: openURL)
+            } label: {
+                HStack(spacing: 22) {
+                    Image(systemName: "waveform.path.ecg")
+                        .foregroundColor(Color(uiColor: .tertiaryLabel))
+                        .font(.title3)
+                    Text("Help")
+                }
+            }
+            
+            Button {
+                // Report a bug mail
+                settingsViewModel.supportBugEmail.send(openURL: openURL)
+            } label: {
+                HStack(spacing: 22) {
+                    Image(systemName: "ant.fill")
+                        .foregroundColor(Color(uiColor: .tertiaryLabel))
+                        .font(.title3)
+                    Text("Report a bug")
+                }
+            }
+        }
+        .listRowBackground(
+            Color.clear
+                .background(.ultraThinMaterial)
+        )
+    }
+    
+    private var supportSection: some View {
+        Section("Support") {
+            Button {
+                // Give a suggestion email
+                settingsViewModel.supportSuggestionEmail.send(openURL: openURL)
+            } label: {
+                HStack(spacing: 22) {
+                    Image(systemName: "atom")
+                        .foregroundColor(Color(uiColor: .tertiaryLabel))
+                        .font(.title3)
+                    Text("Give a suggestion")
+                }
+            }
+            
+            Button {
+                // Write a review
+            } label: {
+                HStack(spacing: 22) {
+                    Image(systemName: "pencil.line")
+                        .foregroundColor(Color(uiColor: .tertiaryLabel))
+                        .font(.title3)
+                    Text("Write a review")
+                }
+            }
+        }
+        .listRowBackground(
+            Color.clear
+                .background(.ultraThinMaterial)
+        )
     }
 }
 

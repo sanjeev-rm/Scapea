@@ -38,8 +38,6 @@ extension HomeView {
         VStack(spacing: 32) {
             headlineAndQuote
             
-//            Spacer()
-            
             options
             
             Spacer()
