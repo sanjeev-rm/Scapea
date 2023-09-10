@@ -64,7 +64,7 @@ extension SettingsView {
         }
         .listRowBackground(
             Color.clear
-                .background(.ultraThinMaterial)
+                .background(.thinMaterial)
         )
     }
     
@@ -95,7 +95,7 @@ extension SettingsView {
         }
         .listRowBackground(
             Color.clear
-                .background(.ultraThinMaterial)
+                .background(.thinMaterial)
         )
     }
 }

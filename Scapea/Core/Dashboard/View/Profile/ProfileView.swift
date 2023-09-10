@@ -111,7 +111,7 @@ extension ProfileView {
         }
         .listRowBackground(
             Color.clear
-                .background(.ultraThinMaterial)
+                .background(.thinMaterial)
         )
     }
     
@@ -130,7 +130,7 @@ extension ProfileView {
         }
         .listRowBackground(
             Color.clear
-                .background(.ultraThinMaterial)
+                .background(.thinMaterial)
         )
     }
     
@@ -148,7 +148,7 @@ extension ProfileView {
         }
         .listRowBackground(
             Color.clear
-                .background(.ultraThinMaterial)
+                .background(.thinMaterial)
         )
     }
 }
