@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 enum ARAction {
+    case placePlantObject(_ plant: ARObjectPlant)
     case placeShapeObject(_ shape: ARObjectShape, color: Color)
     case takeAScreenshot
     case removeAllAnchors

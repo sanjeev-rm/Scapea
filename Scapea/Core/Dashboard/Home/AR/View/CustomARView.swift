@@ -49,10 +49,12 @@ extension CustomARView {
             .sink { [weak self] action in
                 
                 switch action {
+                case .placePlantObject(let plant):
+                    self?.placePlantObject(plant: plant)
                 case .placeShapeObject(let shape, let color):
                     self?.placeShapeObject(shape: shape, color: color)
                 case .takeAScreenshot:
-                    self?.snapshot(saveToHDR: true) { image in
+                    self?.snapshot(saveToHDR: false) { image in
                         print("DEBUG: Taken Screenshot")
                         let imageData = image?.pngData()
                         Storage.addARSnapShot(imageData: imageData)
@@ -81,6 +83,17 @@ extension CustomARView {
         
         entity.generateCollisionShapes(recursive: true)
         self.installGestures([.all], for: entity)
+    }
+    
+    func placePlantObject(plant: ARObjectPlant) {
+        switch plant {
+        case .tulip:
+            guard let tulipAnchor = try? Tulip.load_Tulip() else { return }
+            self.scene.anchors.append(tulipAnchor)
+            guard let tulipEntity = tulipAnchor.tulip else { return }
+            tulipEntity.generateCollisionShapes(recursive: true)
+            self.installGestures([.all], for: tulipEntity as! HasCollision)
+        }
     }
 }
 

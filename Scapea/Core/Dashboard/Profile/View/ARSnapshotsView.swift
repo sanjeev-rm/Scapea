@@ -10,7 +10,7 @@ import SwiftUI
 struct ARSnapshotsView: View {
     
     @State var gridMode = ARSnapshotsGridMode.medium
-    @State var snapshots: [Snapshot] = Storage.getARSnapshots().snapshots
+    @State var snapshots: [Snapshot] = Storage.getARSnapshots().snapshots.reversed()
     
     var body: some View {
         NavigationStack {
@@ -20,12 +20,12 @@ struct ARSnapshotsView: View {
                         NavigationLink {
                             ARSnapshotsImageView(snapshot: snapshot)
                                 .onDisappear {
-                                    self.snapshots = Storage.getARSnapshots().snapshots
+                                    self.snapshots = Storage.getARSnapshots().snapshots.reversed()
                                 }
                         } label: {
                             Image(uiImage: convertImageDataToUIImage(imageData: snapshot.image))
                                 .resizable()
-                                .scaledToFit()
+                                .scaledToFill()
                                 .frame(width: gridMode.width, height: gridMode.height)
                                 .cornerRadius(16)
                         }
@@ -48,9 +48,6 @@ struct ARSnapshotsView: View {
                 }
             }
             .toolbar(.hidden, for: .tabBar)
-            .onAppear {
-                snapshots = Storage.getARSnapshots().snapshots
-            }
         }
     }
 }

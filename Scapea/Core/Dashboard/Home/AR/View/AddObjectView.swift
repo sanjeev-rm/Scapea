@@ -16,6 +16,9 @@ struct AddObjectView: View {
     var body: some View {
         NavigationStack {
             List {
+                
+                plantSection
+                
                 boxSection
                 
                 sphereSection
@@ -40,6 +43,30 @@ struct AddObjectView: View {
 
 
 extension AddObjectView {
+    
+    private var plantSection: some View {
+        Section("Plant") {
+            ScrollView(.horizontal) {
+                HStack(spacing: 16) {
+                    ForEach(ARObjectPlant.allCases, id: \.self) { plant in
+                        Button {
+                            // Call Add plant object function
+                            ARManager.shared.actionStream.send(.placePlantObject(.tulip))
+                            baseARViewModel.showAddObjectOptions = false
+                        } label: {
+                            plant.image
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 100, height: 100)
+                                .background(.clear)
+                                .cornerRadius(16)
+                        }
+                    }
+                }
+            }
+            .scrollIndicators(.hidden)
+        }
+    }
     
     private var boxSection: some View {
         Section("Box") {

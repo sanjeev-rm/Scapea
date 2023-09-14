@@ -16,32 +16,41 @@ struct BaseARView: View {
     var body: some View {
         NavigationStack {
             CustomARViewRepresentable()
+                .environmentObject(baseARViewModel)
                 .ignoresSafeArea()
-                .overlay(alignment: .bottomLeading) {
-                    HStack {
-                        Button {
-                            // Show options to add
-                            baseARViewModel.showAddObjectOptions = true
-                        } label: {
-                            buttonLabel(systemName: "plus")
-                        }
-                        
-                        Button {
-                            // Capture picture of the view
-                            baseARViewModel.showSnapshotClickedAlert()
-                            ARManager.shared.actionStream.send(.takeAScreenshot)
-                        } label: {
-                            buttonLabel(systemName: "camera")
-                        }
-                        
-                        Button {
-                            // Remove all anchors
-                            ARManager.shared.actionStream.send(.removeAllAnchors)
-                        } label: {
-                            buttonLabel(systemName: "trash")
-                        }
+                .onAppear {
+                    baseARViewModel.showingCoaching = true
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                        self.baseARViewModel.showingCoaching = false
                     }
-                    .padding()
+                }
+                .overlay(alignment: .bottomLeading) {
+                    if !baseARViewModel.showingCoaching {
+                        HStack {
+                            Button {
+                                // Show options to add
+                                baseARViewModel.showAddObjectOptions = true
+                            } label: {
+                                buttonLabel(systemName: "plus")
+                            }
+                            
+                            Button {
+                                // Capture picture of the view
+                                baseARViewModel.showSnapshotClickedAlert()
+                                ARManager.shared.actionStream.send(.takeAScreenshot)
+                            } label: {
+                                buttonLabel(systemName: "camera")
+                            }
+                            
+                            Button {
+                                // Remove all anchors
+                                ARManager.shared.actionStream.send(.removeAllAnchors)
+                            } label: {
+                                buttonLabel(systemName: "trash")
+                            }
+                        }
+                        .padding()
+                    }
                 }
                 .overlay(alignment: .topTrailing) {
                     if baseARViewModel.snapShotClicked {

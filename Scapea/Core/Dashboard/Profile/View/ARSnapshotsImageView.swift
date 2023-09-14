@@ -22,7 +22,7 @@ struct ARSnapshotsImageView: View {
     var body: some View {
         Image(uiImage: uiImage)
             .resizable()
-            .scaledToFit()
+            .scaledToFill()
             .toolbar {
                 ToolbarItem(placement: .destructiveAction) {
                     Button(role: .destructive) {
@@ -37,7 +37,7 @@ struct ARSnapshotsImageView: View {
                 }
             }
             .toolbar(.hidden, for: .tabBar)
-            .toolbarBackground(.thickMaterial, for: .navigationBar)
+            .toolbarBackground(Color(.systemBackground), for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
             .navigationBarTitleDisplayMode(.inline)
             .frame(maxWidth: .infinity, maxHeight: .infinity)

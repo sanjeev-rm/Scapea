@@ -49,6 +49,8 @@
 		C7A7F64B2AA65E1B009B9A2A /* SignUpOtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A7F64A2AA65E1B009B9A2A /* SignUpOtpView.swift */; };
 		C7A7F64D2AA66014009B9A2A /* SelectYourAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A7F64C2AA66014009B9A2A /* SelectYourAvatarView.swift */; };
 		C7A7F6552AA66989009B9A2A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A7F6542AA66989009B9A2A /* DashboardView.swift */; };
+		C7B84B5B2AB4AF7D009D83ED /* ARObjectPlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B84B5A2AB4AF7D009D83ED /* ARObjectPlant.swift */; };
+		C7B84B5C2AB546FD009D83ED /* Tulip.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = C7B84B592AB4AD6D009D83ED /* Tulip.rcproject */; };
 		C7CC8DC32AAF82D700E7B5FC /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CC8DC22AAF82D700E7B5FC /* CustomARView.swift */; };
 		C7CC8DC72AAF849F00E7B5FC /* CustomARViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CC8DC62AAF849F00E7B5FC /* CustomARViewRepresentable.swift */; };
 		C7CC8DC92AAF854400E7B5FC /* BaseARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CC8DC82AAF854400E7B5FC /* BaseARView.swift */; };
@@ -111,6 +113,8 @@
 		C7A7F64A2AA65E1B009B9A2A /* SignUpOtpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpOtpView.swift; sourceTree = "<group>"; };
 		C7A7F64C2AA66014009B9A2A /* SelectYourAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectYourAvatarView.swift; sourceTree = "<group>"; };
 		C7A7F6542AA66989009B9A2A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		C7B84B592AB4AD6D009D83ED /* Tulip.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Tulip.rcproject; sourceTree = "<group>"; };
+		C7B84B5A2AB4AF7D009D83ED /* ARObjectPlant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARObjectPlant.swift; sourceTree = "<group>"; };
 		C7CC8DC22AAF82D700E7B5FC /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
 		C7CC8DC62AAF849F00E7B5FC /* CustomARViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARViewRepresentable.swift; sourceTree = "<group>"; };
 		C7CC8DC82AAF854400E7B5FC /* BaseARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseARView.swift; sourceTree = "<group>"; };
@@ -237,6 +241,7 @@
 				C7951F552AA461A2006DF1E6 /* Onboarding */,
 				C7951F532AA460DC006DF1E6 /* Authentication */,
 				C7951F542AA460E6006DF1E6 /* Dashboard */,
+				C7B84B592AB4AD6D009D83ED /* Tulip.rcproject */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -460,6 +465,7 @@
 				C7CC8DD52AB026A700E7B5FC /* ARManager.swift */,
 				C7CC8DD72AB0314100E7B5FC /* ARObjectShape.swift */,
 				C7CC8DD92AB153E200E7B5FC /* ARSnapshots.swift */,
+				C7B84B5A2AB4AF7D009D83ED /* ARObjectPlant.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -595,6 +601,7 @@
 				C7951F752AA49E18006DF1E6 /* LoginView.swift in Sources */,
 				C75BA7F32AA50EA2002B9888 /* EmailView.swift in Sources */,
 				C7951F5D2AA463B3006DF1E6 /* OnboardingView.swift in Sources */,
+				C7B84B5B2AB4AF7D009D83ED /* ARObjectPlant.swift in Sources */,
 				C7951F772AA49E67006DF1E6 /* LoginViewModel.swift in Sources */,
 				C7951F622AA463F7006DF1E6 /* OnboardingStepView.swift in Sources */,
 				C7CC8DD62AB026A700E7B5FC /* ARManager.swift in Sources */,
@@ -606,6 +613,7 @@
 				C7CC8DC72AAF849F00E7B5FC /* CustomARViewRepresentable.swift in Sources */,
 				C7CC8DD42AB0266500E7B5FC /* ARAction.swift in Sources */,
 				C70B6AE72AA90F08000DED0A /* Bundle+Extension.swift in Sources */,
+				C7B84B5C2AB546FD009D83ED /* Tulip.rcproject in Sources */,
 				C70B41062AADC1360048693B /* ScapeaAction.swift in Sources */,
 				C7208CAC2AA7BAB300F5F7D5 /* SettingsView.swift in Sources */,
 				C75BA7F52AA510E4002B9888 /* OTPView.swift in Sources */,

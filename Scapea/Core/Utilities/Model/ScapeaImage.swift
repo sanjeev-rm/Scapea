@@ -11,6 +11,7 @@ import SwiftUI
 enum ScapeaImage: String {
     case onboardingStep1Image = "onboarding.step1.image"
     case arScannerImage = "ar.scanner.image"
+    case arObjectPlantTulipImage = "ar.object.plant.tulip.image"
 }
 
 extension Image {

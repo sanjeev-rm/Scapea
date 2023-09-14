@@ -14,6 +14,8 @@ class BaseARViewModel: ObservableObject {
     
     @Published var snapShotClicked: Bool = false
     
+    @Published var showingCoaching: Bool = false
+    
     func showSnapshotClickedAlert() {
         withAnimation(.easeInOut) {
             snapShotClicked = true
