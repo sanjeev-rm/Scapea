@@ -37,7 +37,7 @@ struct ARSnapshotsImageView: View {
                 }
             }
             .toolbar(.hidden, for: .tabBar)
-            .toolbarBackground(.thickMaterial, for: .navigationBar)
+            .toolbarBackground(Color(.systemBackground), for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
             .navigationBarTitleDisplayMode(.inline)
             .frame(maxWidth: .infinity, maxHeight: .infinity)

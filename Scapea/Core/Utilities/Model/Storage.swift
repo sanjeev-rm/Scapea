@@ -17,6 +17,8 @@ class Storage {
     @AppStorage(Key.arSnapshots.rawValue) static var arSnapshots: Data = Data()
     
     static func addARSnapShot(imageData: Data?) {
+        print("DEBUG: Add AR Snapshot function called")
+        
         guard let newImageData = imageData else { return }
 
         var storedARSnapshots = getARSnapshots()
@@ -30,6 +32,8 @@ class Storage {
     }
     
     static func getARSnapshots() -> ARSnapshots {
+        print("DEBUG: Get AR Snapshot function called")
+        
         if let storedARSnapshots = try? JSONDecoder().decode(ARSnapshots.self, from: Storage.arSnapshots) {
             return storedARSnapshots
         } else {
@@ -39,10 +43,12 @@ class Storage {
     }
     
     static func deleteSnapshot(_ toDeleteSnapshot: Snapshot) {
+        print("DEBUG: Delete AR Snapshot function called")
+        
         var storedARSnapshots = getARSnapshots()
         storedARSnapshots.snapshots.removeAll { snapshot in
             if(snapshot.id == toDeleteSnapshot.id) {
-                print("DEBUG: Delete snapshot")
+                print("DEBUG: Deleted snapshot")
             }
             return snapshot.id == toDeleteSnapshot.id
         }
