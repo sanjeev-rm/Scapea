@@ -30,18 +30,20 @@ class Storage {
     }
     
     static func getARSnapshots() -> ARSnapshots {
-        if let storedARSnapshots = try? JSONDecoder().decode(ARSnapshots.self, from: arSnapshots) {
+        if let storedARSnapshots = try? JSONDecoder().decode(ARSnapshots.self, from: Storage.arSnapshots) {
             return storedARSnapshots
+        } else {
+            print("DEBUG: Unable to debug stored AR snapshots")
         }
         return ARSnapshots(snapshots: [])
     }
     
     static func deleteSnapshot(_ toDeleteSnapshot: Snapshot) {
-        print("DEBUG: Delete function called")
-        
         var storedARSnapshots = getARSnapshots()
         storedARSnapshots.snapshots.removeAll { snapshot in
-            print("DEBUG: Deleted Snapshot")
+            if(snapshot.id == toDeleteSnapshot.id) {
+                print("DEBUG: Delete snapshot")
+            }
             return snapshot.id == toDeleteSnapshot.id
         }
         

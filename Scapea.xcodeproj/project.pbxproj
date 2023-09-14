@@ -144,12 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				C7CC8DDF2AB182C700E7B5FC /* Model */,
-				C7208CA72AA7BA9C00F5F7D5 /* ProfileView.swift */,
-				C70B40F92AAAE2F10048693B /* UpdateAvatarView.swift */,
-				C70B40FB2AAAE3010048693B /* UpdateUsernameView.swift */,
-				C70B40FD2AAAE30F0048693B /* UpdatePasswordView.swift */,
-				C7CC8DDD2AB15E1300E7B5FC /* ARSnapshotsView.swift */,
-				C7CC8DE22AB192DF00E7B5FC /* ARSnapshotsImageView.swift */,
+				C74E13A22AB37C75005E5DB5 /* ViewModel */,
+				C74E13A32AB37C85005E5DB5 /* View */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -157,8 +153,7 @@
 		C70B40F72AAADE4A0048693B /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				C7208CA92AA7BAA600F5F7D5 /* HomeView.swift */,
-				C70B41072AADC22A0048693B /* ActionCardView.swift */,
+				C74E13A72AB37CCF005E5DB5 /* Base */,
 				C7CC8DC12AAF715900E7B5FC /* Chat */,
 				C7CC8DC02AAF715400E7B5FC /* AR */,
 			);
@@ -168,7 +163,9 @@
 		C70B40F82AAADE520048693B /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				C7208CAB2AA7BAB300F5F7D5 /* SettingsView.swift */,
+				C74E13A62AB37CB1005E5DB5 /* Model */,
+				C74E13A52AB37CAB005E5DB5 /* ViewModel */,
+				C74E13A42AB37CA3005E5DB5 /* View */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -252,6 +249,87 @@
 			path = "Launch Screen";
 			sourceTree = "<group>";
 		};
+		C74E13A22AB37C75005E5DB5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C70B40F42AAADB8E0048693B /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C74E13A32AB37C85005E5DB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7208CA72AA7BA9C00F5F7D5 /* ProfileView.swift */,
+				C70B40F92AAAE2F10048693B /* UpdateAvatarView.swift */,
+				C70B40FB2AAAE3010048693B /* UpdateUsernameView.swift */,
+				C70B40FD2AAAE30F0048693B /* UpdatePasswordView.swift */,
+				C7CC8DDD2AB15E1300E7B5FC /* ARSnapshotsView.swift */,
+				C7CC8DE22AB192DF00E7B5FC /* ARSnapshotsImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C74E13A42AB37CA3005E5DB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7208CAB2AA7BAB300F5F7D5 /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C74E13A52AB37CAB005E5DB5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C70B6AE82AA90F45000DED0A /* SettingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C74E13A62AB37CB1005E5DB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C70B6AE42AA90DFC000DED0A /* SupportEmail.swift */,
+				C70B6AE62AA90F08000DED0A /* Bundle+Extension.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C74E13A72AB37CCF005E5DB5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C74E13AA2AB37CE5005E5DB5 /* Model */,
+				C74E13A92AB37CDF005E5DB5 /* ViewModel */,
+				C74E13A82AB37CD9005E5DB5 /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C74E13A82AB37CD9005E5DB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7208CA92AA7BAA600F5F7D5 /* HomeView.swift */,
+				C70B41072AADC22A0048693B /* ActionCardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C74E13A92AB37CDF005E5DB5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C70B41092AAE0B140048693B /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C74E13AA2AB37CE5005E5DB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C70B41052AADC1360048693B /* ScapeaAction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C7951F532AA460DC006DF1E6 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,9 +343,10 @@
 		C7951F542AA460E6006DF1E6 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				C7A7F6532AA66967009B9A2A /* Model */,
-				C7A7F6502AA66946009B9A2A /* View */,
-				C7A7F6512AA6694B009B9A2A /* View Model */,
+				C7A7F6542AA66989009B9A2A /* DashboardView.swift */,
+				C70B40F62AAADE410048693B /* Profile */,
+				C70B40F72AAADE4A0048693B /* Home */,
+				C70B40F82AAADE520048693B /* Settings */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -302,8 +381,8 @@
 		C7951F642AA4676F006DF1E6 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				C70B41002AAB08DE0048693B /* View */,
 				C70B40FF2AAB08D40048693B /* Model */,
+				C70B41002AAB08DE0048693B /* View */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -335,37 +414,6 @@
 				C75BA7F02AA50E41002B9888 /* ForgotPasswordViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		C7A7F6502AA66946009B9A2A /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C7A7F6542AA66989009B9A2A /* DashboardView.swift */,
-				C70B40F82AAADE520048693B /* Settings */,
-				C70B40F72AAADE4A0048693B /* Home */,
-				C70B40F62AAADE410048693B /* Profile */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		C7A7F6512AA6694B009B9A2A /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-				C70B6AE82AA90F45000DED0A /* SettingsViewModel.swift */,
-				C70B40F42AAADB8E0048693B /* ProfileViewModel.swift */,
-				C70B41092AAE0B140048693B /* HomeViewModel.swift */,
-			);
-			path = "View Model";
-			sourceTree = "<group>";
-		};
-		C7A7F6532AA66967009B9A2A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C70B6AE42AA90DFC000DED0A /* SupportEmail.swift */,
-				C70B6AE62AA90F08000DED0A /* Bundle+Extension.swift */,
-				C70B41052AADC1360048693B /* ScapeaAction.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		C7CC8DC02AAF715400E7B5FC /* AR */ = {

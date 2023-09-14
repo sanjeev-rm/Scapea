@@ -48,6 +48,9 @@ struct ARSnapshotsView: View {
                 }
             }
             .toolbar(.hidden, for: .tabBar)
+            .onAppear {
+                snapshots = Storage.getARSnapshots().snapshots
+            }
         }
     }
 }
