@@ -20,7 +20,7 @@ struct HomeView: View {
             content
         }
         .fullScreenCover(isPresented: $homeViewModel.showARView) {
-            ARView()
+            BaseARView()
                 .environmentObject(homeViewModel)
         }
         .fullScreenCover(isPresented: $homeViewModel.showTriviaView) {

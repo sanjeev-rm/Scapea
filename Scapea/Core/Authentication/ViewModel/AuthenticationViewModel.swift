@@ -9,7 +9,7 @@ import Foundation
 
 class AuthenticationViewModel: ObservableObject {
     
-    @Published var isLoggedIn: Bool = false
+    @Published var isLoggedIn: Bool = true // True for now
     
     @Published var showOnboarding: Bool = true
     

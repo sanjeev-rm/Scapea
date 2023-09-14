@@ -25,7 +25,6 @@ struct SettingsView: View {
                 AngularGradient(colors: [Color(.systemGreen), Color(.systemFill)], center: .bottomTrailing)
                     .ignoresSafeArea()
             )
-            .scrollBounceBehavior(.basedOnSize)
             .navigationTitle("Settings")
         }
     }

@@ -20,6 +20,8 @@ struct ProfileView: View {
                 
                 usernameAndEmailSection
                 
+                arSnapshotsSection
+                
                 updatePasswordSection
                 
                 signOutSection
@@ -30,7 +32,6 @@ struct ProfileView: View {
                 AngularGradient(colors: [Color(.systemGreen), Color(.systemFill)], center: .bottomTrailing)
                     .ignoresSafeArea()
             )
-            .scrollBounceBehavior(.basedOnSize)
             .navigationTitle("Profile")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -92,7 +93,7 @@ extension ProfileView {
                 Spacer()
                 Text(profileViewModel.username)
                     .foregroundColor(.gray)
-                    .fontDesign(.monospaced)
+                    .font(.system(.body, design: .monospaced))
                     .onTapGesture {
                         profileViewModel.showUpdateNameView = true
                     }
@@ -105,8 +106,29 @@ extension ProfileView {
                 Spacer()
                 Text(profileViewModel.email)
                     .foregroundColor(.gray)
-                    .fontDesign(.monospaced)
+                    .font(.system(.body, design: .monospaced))
                     .redacted(reason: profileViewModel.fetchingUserProfile ? .placeholder : [])
+            }
+        }
+        .listRowBackground(
+            Color.clear
+                .background(.thinMaterial)
+        )
+    }
+    
+    private var arSnapshotsSection: some View {
+        Section {
+            NavigationLink {
+                ARSnapshotsView()
+            } label: {
+                Button {
+                } label: {
+                    HStack(spacing: 22) {
+                        Image(systemName: "camera.viewfinder")
+                            .foregroundColor(Color(uiColor: .tertiaryLabel))
+                        Text("AR Snapshots")
+                    }
+                }
             }
         }
         .listRowBackground(

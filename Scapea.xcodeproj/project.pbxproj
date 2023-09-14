@@ -15,7 +15,6 @@
 		C70B41062AADC1360048693B /* ScapeaAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B41052AADC1360048693B /* ScapeaAction.swift */; };
 		C70B41082AADC22A0048693B /* ActionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B41072AADC22A0048693B /* ActionCardView.swift */; };
 		C70B410A2AAE0B140048693B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B41092AAE0B140048693B /* HomeViewModel.swift */; };
-		C70B410C2AAE0BA00048693B /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B410B2AAE0BA00048693B /* ARView.swift */; };
 		C70B410E2AAE0BB80048693B /* TriviaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B410D2AAE0BB80048693B /* TriviaView.swift */; };
 		C70B6AE52AA90DFC000DED0A /* SupportEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B6AE42AA90DFC000DED0A /* SupportEmail.swift */; };
 		C70B6AE72AA90F08000DED0A /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B6AE62AA90F08000DED0A /* Bundle+Extension.swift */; };
@@ -50,6 +49,19 @@
 		C7A7F64B2AA65E1B009B9A2A /* SignUpOtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A7F64A2AA65E1B009B9A2A /* SignUpOtpView.swift */; };
 		C7A7F64D2AA66014009B9A2A /* SelectYourAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A7F64C2AA66014009B9A2A /* SelectYourAvatarView.swift */; };
 		C7A7F6552AA66989009B9A2A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A7F6542AA66989009B9A2A /* DashboardView.swift */; };
+		C7CC8DC32AAF82D700E7B5FC /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CC8DC22AAF82D700E7B5FC /* CustomARView.swift */; };
+		C7CC8DC72AAF849F00E7B5FC /* CustomARViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CC8DC62AAF849F00E7B5FC /* CustomARViewRepresentable.swift */; };
+		C7CC8DC92AAF854400E7B5FC /* BaseARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CC8DC82AAF854400E7B5FC /* BaseARView.swift */; };
+		C7CC8DCC2AB00BF000E7B5FC /* AddObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CC8DCB2AB00BF000E7B5FC /* AddObjectView.swift */; };
+		C7CC8DD02AB00EA200E7B5FC /* BaseARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CC8DCF2AB00EA200E7B5FC /* BaseARViewModel.swift */; };
+		C7CC8DD42AB0266500E7B5FC /* ARAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CC8DD32AB0266500E7B5FC /* ARAction.swift */; };
+		C7CC8DD62AB026A700E7B5FC /* ARManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CC8DD52AB026A700E7B5FC /* ARManager.swift */; };
+		C7CC8DD82AB0314100E7B5FC /* ARObjectShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CC8DD72AB0314100E7B5FC /* ARObjectShape.swift */; };
+		C7CC8DDA2AB153E200E7B5FC /* ARSnapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CC8DD92AB153E200E7B5FC /* ARSnapshots.swift */; };
+		C7CC8DDC2AB154D000E7B5FC /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CC8DDB2AB154D000E7B5FC /* Storage.swift */; };
+		C7CC8DDE2AB15E1300E7B5FC /* ARSnapshotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CC8DDD2AB15E1300E7B5FC /* ARSnapshotsView.swift */; };
+		C7CC8DE12AB182E800E7B5FC /* ARSnapshotsGridMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CC8DE02AB182E800E7B5FC /* ARSnapshotsGridMode.swift */; };
+		C7CC8DE32AB192DF00E7B5FC /* ARSnapshotsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CC8DE22AB192DF00E7B5FC /* ARSnapshotsImageView.swift */; };
 		C7E840692AA504A800DC0926 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E840682AA504A800DC0926 /* SignUpView.swift */; };
 		C7E8406B2AA504DA00DC0926 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E8406A2AA504DA00DC0926 /* SignUpViewModel.swift */; };
 		C7E840702AA50A3100DC0926 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E8406F2AA50A3100DC0926 /* ForgotPasswordView.swift */; };
@@ -64,7 +76,6 @@
 		C70B41052AADC1360048693B /* ScapeaAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScapeaAction.swift; sourceTree = "<group>"; };
 		C70B41072AADC22A0048693B /* ActionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCardView.swift; sourceTree = "<group>"; };
 		C70B41092AAE0B140048693B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		C70B410B2AAE0BA00048693B /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
 		C70B410D2AAE0BB80048693B /* TriviaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaView.swift; sourceTree = "<group>"; };
 		C70B6AE42AA90DFC000DED0A /* SupportEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportEmail.swift; sourceTree = "<group>"; };
 		C70B6AE62AA90F08000DED0A /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
@@ -100,6 +111,19 @@
 		C7A7F64A2AA65E1B009B9A2A /* SignUpOtpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpOtpView.swift; sourceTree = "<group>"; };
 		C7A7F64C2AA66014009B9A2A /* SelectYourAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectYourAvatarView.swift; sourceTree = "<group>"; };
 		C7A7F6542AA66989009B9A2A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		C7CC8DC22AAF82D700E7B5FC /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		C7CC8DC62AAF849F00E7B5FC /* CustomARViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARViewRepresentable.swift; sourceTree = "<group>"; };
+		C7CC8DC82AAF854400E7B5FC /* BaseARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseARView.swift; sourceTree = "<group>"; };
+		C7CC8DCB2AB00BF000E7B5FC /* AddObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddObjectView.swift; sourceTree = "<group>"; };
+		C7CC8DCF2AB00EA200E7B5FC /* BaseARViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseARViewModel.swift; sourceTree = "<group>"; };
+		C7CC8DD32AB0266500E7B5FC /* ARAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARAction.swift; sourceTree = "<group>"; };
+		C7CC8DD52AB026A700E7B5FC /* ARManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARManager.swift; sourceTree = "<group>"; };
+		C7CC8DD72AB0314100E7B5FC /* ARObjectShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARObjectShape.swift; sourceTree = "<group>"; };
+		C7CC8DD92AB153E200E7B5FC /* ARSnapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSnapshots.swift; sourceTree = "<group>"; };
+		C7CC8DDB2AB154D000E7B5FC /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		C7CC8DDD2AB15E1300E7B5FC /* ARSnapshotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSnapshotsView.swift; sourceTree = "<group>"; };
+		C7CC8DE02AB182E800E7B5FC /* ARSnapshotsGridMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSnapshotsGridMode.swift; sourceTree = "<group>"; };
+		C7CC8DE22AB192DF00E7B5FC /* ARSnapshotsImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSnapshotsImageView.swift; sourceTree = "<group>"; };
 		C7E840682AA504A800DC0926 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		C7E8406A2AA504DA00DC0926 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		C7E8406F2AA50A3100DC0926 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
@@ -119,10 +143,13 @@
 		C70B40F62AAADE410048693B /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				C7CC8DDF2AB182C700E7B5FC /* Model */,
 				C7208CA72AA7BA9C00F5F7D5 /* ProfileView.swift */,
 				C70B40F92AAAE2F10048693B /* UpdateAvatarView.swift */,
 				C70B40FB2AAAE3010048693B /* UpdateUsernameView.swift */,
 				C70B40FD2AAAE30F0048693B /* UpdatePasswordView.swift */,
+				C7CC8DDD2AB15E1300E7B5FC /* ARSnapshotsView.swift */,
+				C7CC8DE22AB192DF00E7B5FC /* ARSnapshotsImageView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -132,8 +159,8 @@
 			children = (
 				C7208CA92AA7BAA600F5F7D5 /* HomeView.swift */,
 				C70B41072AADC22A0048693B /* ActionCardView.swift */,
-				C70B410B2AAE0BA00048693B /* ARView.swift */,
-				C70B410D2AAE0BB80048693B /* TriviaView.swift */,
+				C7CC8DC12AAF715900E7B5FC /* Chat */,
+				C7CC8DC02AAF715400E7B5FC /* AR */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -152,6 +179,7 @@
 				C7951F692AA48FD4006DF1E6 /* ScapeaColor.swift */,
 				C7951F6B2AA49458006DF1E6 /* ScapeaImage.swift */,
 				C70B41012AAB09050048693B /* ScapeaAvatar.swift */,
+				C7CC8DDB2AB154D000E7B5FC /* Storage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -340,6 +368,62 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C7CC8DC02AAF715400E7B5FC /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				C7CC8DD12AB0265100E7B5FC /* Model */,
+				C7CC8DCE2AB00E8C00E7B5FC /* ViewModel */,
+				C7CC8DCD2AB00E8700E7B5FC /* View */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		C7CC8DC12AAF715900E7B5FC /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				C70B410D2AAE0BB80048693B /* TriviaView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		C7CC8DCD2AB00E8700E7B5FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7CC8DC82AAF854400E7B5FC /* BaseARView.swift */,
+				C7CC8DC22AAF82D700E7B5FC /* CustomARView.swift */,
+				C7CC8DC62AAF849F00E7B5FC /* CustomARViewRepresentable.swift */,
+				C7CC8DCB2AB00BF000E7B5FC /* AddObjectView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7CC8DCE2AB00E8C00E7B5FC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C7CC8DCF2AB00EA200E7B5FC /* BaseARViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C7CC8DD12AB0265100E7B5FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7CC8DD32AB0266500E7B5FC /* ARAction.swift */,
+				C7CC8DD52AB026A700E7B5FC /* ARManager.swift */,
+				C7CC8DD72AB0314100E7B5FC /* ARObjectShape.swift */,
+				C7CC8DD92AB153E200E7B5FC /* ARSnapshots.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7CC8DDF2AB182C700E7B5FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7CC8DE02AB182E800E7B5FC /* ARSnapshotsGridMode.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C7E8406C2AA509F000DC0926 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -445,9 +529,12 @@
 				C7208CA82AA7BA9C00F5F7D5 /* ProfileView.swift in Sources */,
 				C7E8406B2AA504DA00DC0926 /* SignUpViewModel.swift in Sources */,
 				C7951F7B2AA4A420006DF1E6 /* ScapeaButton.swift in Sources */,
+				C7CC8DE32AB192DF00E7B5FC /* ARSnapshotsImageView.swift in Sources */,
 				C7951F662AA46787006DF1E6 /* RoundedCorner.swift in Sources */,
+				C7CC8DDA2AB153E200E7B5FC /* ARSnapshots.swift in Sources */,
 				C7951F682AA48590006DF1E6 /* OnboardingProgressView.swift in Sources */,
 				C7208CAE2AA7BE7300F5F7D5 /* AlertSheetView.swift in Sources */,
+				C7CC8DDE2AB15E1300E7B5FC /* ARSnapshotsView.swift in Sources */,
 				C70B6AE92AA90F45000DED0A /* SettingsViewModel.swift in Sources */,
 				C70B40FC2AAAE3010048693B /* UpdateUsernameView.swift in Sources */,
 				C70FBAF42AA45F5E0047272B /* ContentView.swift in Sources */,
@@ -462,26 +549,35 @@
 				C7951F5D2AA463B3006DF1E6 /* OnboardingView.swift in Sources */,
 				C7951F772AA49E67006DF1E6 /* LoginViewModel.swift in Sources */,
 				C7951F622AA463F7006DF1E6 /* OnboardingStepView.swift in Sources */,
+				C7CC8DD62AB026A700E7B5FC /* ARManager.swift in Sources */,
+				C7CC8DD82AB0314100E7B5FC /* ARObjectShape.swift in Sources */,
+				C7CC8DDC2AB154D000E7B5FC /* Storage.swift in Sources */,
 				C7951F592AA461E1006DF1E6 /* OnboardingStep.swift in Sources */,
 				C70B410A2AAE0B140048693B /* HomeViewModel.swift in Sources */,
-				C70B410C2AAE0BA00048693B /* ARView.swift in Sources */,
 				C70B40FE2AAAE30F0048693B /* UpdatePasswordView.swift in Sources */,
+				C7CC8DC72AAF849F00E7B5FC /* CustomARViewRepresentable.swift in Sources */,
+				C7CC8DD42AB0266500E7B5FC /* ARAction.swift in Sources */,
 				C70B6AE72AA90F08000DED0A /* Bundle+Extension.swift in Sources */,
 				C70B41062AADC1360048693B /* ScapeaAction.swift in Sources */,
 				C7208CAC2AA7BAB300F5F7D5 /* SettingsView.swift in Sources */,
 				C75BA7F52AA510E4002B9888 /* OTPView.swift in Sources */,
+				C7CC8DC92AAF854400E7B5FC /* BaseARView.swift in Sources */,
 				C7208CA62AA7B4E900F5F7D5 /* AvatarView.swift in Sources */,
 				C7A7F64B2AA65E1B009B9A2A /* SignUpOtpView.swift in Sources */,
 				C70B41082AADC22A0048693B /* ActionCardView.swift in Sources */,
+				C7CC8DD02AB00EA200E7B5FC /* BaseARViewModel.swift in Sources */,
+				C7CC8DE12AB182E800E7B5FC /* ARSnapshotsGridMode.swift in Sources */,
 				C7E840692AA504A800DC0926 /* SignUpView.swift in Sources */,
 				C70B40FA2AAAE2F10048693B /* UpdateAvatarView.swift in Sources */,
 				C7951F792AA49F4A006DF1E6 /* PasswordField.swift in Sources */,
+				C7CC8DCC2AB00BF000E7B5FC /* AddObjectView.swift in Sources */,
 				C70B6AE52AA90DFC000DED0A /* SupportEmail.swift in Sources */,
 				C7951F6C2AA49459006DF1E6 /* ScapeaImage.swift in Sources */,
 				C7E840702AA50A3100DC0926 /* ForgotPasswordView.swift in Sources */,
 				C70B40F52AAADB8E0048693B /* ProfileViewModel.swift in Sources */,
 				C75BA7F12AA50E42002B9888 /* ForgotPasswordViewModel.swift in Sources */,
 				C7A7F64D2AA66014009B9A2A /* SelectYourAvatarView.swift in Sources */,
+				C7CC8DC32AAF82D700E7B5FC /* CustomARView.swift in Sources */,
 				C70FBAF22AA45F5E0047272B /* ScapeaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,6 +710,8 @@
 				DEVELOPMENT_TEAM = 255PJ663UF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Needed to use AR";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To save AR snapshots";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -621,6 +719,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -645,6 +744,8 @@
 				DEVELOPMENT_TEAM = 255PJ663UF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Needed to use AR";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To save AR snapshots";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -652,6 +753,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

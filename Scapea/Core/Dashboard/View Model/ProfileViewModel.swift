@@ -29,7 +29,7 @@ class ProfileViewModel: ObservableObject {
     
     func fetchUserProfile() {
         fetchingUserProfile = true
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.fetchingUserProfile = false
         }
     }
@@ -37,7 +37,7 @@ class ProfileViewModel: ObservableObject {
     func updateAvatar(completion: @escaping (Bool) -> Void) {
         // Update avatar in server
         updatingAvatar = true
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.updatingAvatar = false
             completion(true)
         }
@@ -46,7 +46,7 @@ class ProfileViewModel: ObservableObject {
     func updateUsername(completion: @escaping (Bool) -> Void) {
         // Update username in server
         updatingUsername = true
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.updatingUsername = false
             completion(true)
         }
@@ -55,7 +55,7 @@ class ProfileViewModel: ObservableObject {
     func updatePassword(completion: @escaping (Bool) -> Void) {
         // Update password in server
         updatingPassword = true
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.updatingPassword = false
             completion(true)
         }

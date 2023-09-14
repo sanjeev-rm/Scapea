@@ -30,7 +30,6 @@ struct SignUpView: View {
                         .frame(minHeight: geometry.size.height)
                     }
                     .frame(width: geometry.size.width)
-                    .scrollBounceBehavior(.basedOnSize)
                 }
             }
             .padding()
