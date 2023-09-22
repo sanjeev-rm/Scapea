@@ -1,3 +1,2 @@
 # Scapea
-
-An Augmented Reality App
+An Augmented Reality App.
