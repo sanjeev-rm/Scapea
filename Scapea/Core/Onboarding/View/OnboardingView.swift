@@ -15,7 +15,14 @@ struct OnboardingView: View {
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
-            OnboardingStepView(onboardingStep: currentStep)
+            TabView(selection: $currentStep) {
+                ForEach(OnboardingStep.allCases, id: \.self) { onboardingStep in
+                    OnboardingStepView(onboardingStep: onboardingStep)
+                }
+            }
+            .tabViewStyle(.page(indexDisplayMode: .never))
+            .ignoresSafeArea()
+            .scrollDisabled(currentStep == .one || currentStep == .three)
             
             VStack(alignment: .trailing) {
                 
@@ -36,6 +43,7 @@ struct OnboardingView: View {
             }
             .padding(27)
         }
+        .background(currentStep.primaryColor)
     }
 }
 
@@ -49,9 +57,8 @@ extension OnboardingView {
             authenticationViewModel.showOnboarding = false
         } label: {
             Text("Skip")
-                .underline()
         }
-        .foregroundColor(.black)
+        .foregroundStyle(.secondary)
     }
     
     private var nextButton: some View {
@@ -74,11 +81,11 @@ extension OnboardingView {
             }
         } label: {
             Image(systemName: (currentStep == .three) ? "checkmark" : "chevron.right")
-                .foregroundColor(.black)
+                .foregroundColor(.secondary)
                 .font(.title.bold())
                 .padding(22)
                 .frame(width: 64, height: 64)
-                .background(Color.white)
+                .background(.regularMaterial)
                 .clipShape(Circle())
         }
     }

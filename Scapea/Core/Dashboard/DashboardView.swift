@@ -13,9 +13,9 @@ struct DashboardView: View {
     
     var body: some View {
         TabView(selection: $currentTab) {
-            ProfileView()
+            MyGardenView()
                 .tabItem {
-                    Image(systemName: "person")
+                    Image(systemName: "camera.macro")
                 }
                 .tag(1)
             
@@ -25,11 +25,17 @@ struct DashboardView: View {
                 }
                 .tag(2)
             
-            SettingsView()
+            MarketPlaceView()
                 .tabItem {
-                    Image(systemName: "gear")
+                    Image(systemName: "cart")
                 }
                 .tag(3)
+            
+            CommunityView()
+                .tabItem {
+                    Image(systemName: "person.3.fill")
+                }
+                .tag(4)
         }
         .onAppear {
             currentTab = 2

@@ -10,5 +10,5 @@ import Foundation
 class HomeViewModel: ObservableObject {
     
     @Published var showARView: Bool = false
-    @Published var showTriviaView: Bool = false
+    @Published var showSettingsView: Bool = false
 }

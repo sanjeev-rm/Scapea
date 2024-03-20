@@ -23,6 +23,7 @@ struct OnboardingStepView: View {
                 onboardingStep.image
                     .resizable()
                     .frame(width: 250, height: 250)
+                    .padding(.top, 32)
             }
             
             VStack(spacing: 16) {

@@ -13,6 +13,8 @@ struct ProfileView: View {
     
     @StateObject var profileViewModel: ProfileViewModel = ProfileViewModel()
     
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         NavigationStack {
             List {
@@ -20,9 +22,11 @@ struct ProfileView: View {
                 
                 usernameAndEmailSection
                 
+                contactSection
+                
                 arSnapshotsSection
                 
-                updatePasswordSection
+//                updatePasswordSection
                 
                 signOutSection
             }
@@ -32,11 +36,17 @@ struct ProfileView: View {
                 AngularGradient(colors: [Color(.systemGreen), Color(.systemFill)], center: .bottomTrailing)
                     .ignoresSafeArea()
             )
-            .navigationTitle("Profile")
+            .navigationTitle("Settings")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     if profileViewModel.fetchingUserProfile {
                         ProgressView()
+                    } else {
+                        Button {
+                            dismiss()
+                        } label: {
+                            Image(systemName: "xmark")
+                        }
                     }
                 }
             }
@@ -70,15 +80,15 @@ extension ProfileView {
         Section {
             HStack {
                 Spacer()
-                Image(systemName: "person.circle.fill")
+                Image(systemName: "person.crop.circle.fill")
                     .resizable()
-                    .frame(width: 120, height: 120)
+                    .frame(width: 100, height: 100)
                     .clipShape(Circle())
                     .redacted(reason: profileViewModel.fetchingUserProfile ? .placeholder : [])
                     .onTapGesture {
                         profileViewModel.showUpdateAvatarView = true
                     }
-                    .foregroundColor(.gray.opacity(0.7))
+                    .foregroundColor(.secondary.opacity(0.3))
                 Spacer()
             }
         }
@@ -86,7 +96,7 @@ extension ProfileView {
     }
     
     private var usernameAndEmailSection: some View {
-        Section {
+        Section("Profile") {
             HStack {
                 Text("Username")
                     .font(.headline)
@@ -126,7 +136,7 @@ extension ProfileView {
                     HStack(spacing: 22) {
                         Image(systemName: "camera.viewfinder")
                             .foregroundColor(Color(uiColor: .tertiaryLabel))
-                        Text("AR Snapshots")
+                        Text("Saved AR Snapshots")
                     }
                 }
             }
@@ -166,6 +176,71 @@ extension ProfileView {
                 }
             } label: {
                 Text("Sign Out")
+            }
+        }
+        .listRowBackground(
+            Color.clear
+                .background(.thinMaterial)
+        )
+    }
+    
+    private var contactSection: some View {
+        Section("Support") {
+            
+            Button {
+                // Get help email
+//                settingsViewModel.supportHelpEmail.send(openURL: openURL)
+            } label: {
+                HStack(spacing: 22) {
+                    Image(systemName: "waveform.path.ecg")
+                        .foregroundColor(Color(uiColor: .tertiaryLabel))
+                        .font(.title3)
+                    Text("Help")
+                }
+            }
+            
+            Button {
+                // Write a review
+            } label: {
+                HStack(spacing: 22) {
+                    Image(systemName: "person.fill.questionmark")
+                        .foregroundColor(Color(uiColor: .tertiaryLabel))
+                        .font(.title3)
+                    Text("FAQ")
+                }
+            }
+            
+            Button {
+                // Report a bug mail
+//                settingsViewModel.supportBugEmail.send(openURL: openURL)
+            } label: {
+                HStack(spacing: 22) {
+                    Image(systemName: "ant.fill")
+                        .foregroundColor(Color(uiColor: .tertiaryLabel))
+                        .font(.title3)
+                    Text("Report a bug")
+                }
+            }
+            
+            Button {
+            } label: {
+                HStack(spacing: 22) {
+                    Image(systemName: "atom")
+                        .foregroundColor(Color(uiColor: .tertiaryLabel))
+                        .font(.title3)
+                    Text("Give a suggestion")
+                }
+            }
+            
+            Button {
+                // Write a review
+            } label: {
+                HStack(spacing: 22) {
+                    Image(systemName: "pencil.line")
+                        .foregroundColor(Color(uiColor: .tertiaryLabel))
+                        .font(.title3)
+                    Text("Write a review")
+                }
             }
         }
         .listRowBackground(

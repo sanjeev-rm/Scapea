@@ -22,8 +22,7 @@ struct SettingsView: View {
             }
             .scrollContentBackground(.hidden)
             .background(
-                AngularGradient(colors: [Color(.systemGreen), Color(.systemFill)], center: .bottomTrailing)
-                    .ignoresSafeArea()
+                APP_BACKGROUND_VIEW
             )
             .navigationTitle("Settings")
         }

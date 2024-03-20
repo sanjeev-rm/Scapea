@@ -14,7 +14,11 @@ enum OnboardingStep: CaseIterable {
     case three
     
     var image: Image {
-        return Image(scapeaImage: .onboardingStep1Image)
+        switch self {
+        case .one: return Image(.onboardingStep1)
+        case .two: return Image(.onboardingStep2)
+        case .three: return Image(.onboardingStep3)
+        }
     }
     
     var title: String {

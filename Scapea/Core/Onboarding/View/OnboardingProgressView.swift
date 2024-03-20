@@ -16,7 +16,7 @@ struct OnboardingProgressView: View {
                 let isPresenting = (currentOnboardingStep == onboardingStep)
                 RoundedRectangle(cornerRadius: 32)
                     .frame(width: 10, height: 10)
-                    .foregroundColor(isPresenting ? .black : .white.opacity(0.7))
+                    .foregroundColor(isPresenting ? .secondary : .white.opacity(0.7))
             }
         }
     }

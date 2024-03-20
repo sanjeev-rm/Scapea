@@ -44,45 +44,45 @@ class CustomARView: ARView {
 extension CustomARView {
     
     func subscribeToActionStream() {
-        ARManager.shared
-            .actionStream
-            .sink { [weak self] action in
-                
-                switch action {
-                case .placePlantObject(let plant):
-                    self?.placePlantObject(plant: plant)
-                case .placeShapeObject(let shape, let color):
-                    self?.placeShapeObject(shape: shape, color: color)
-                case .takeAScreenshot:
-                    self?.snapshot(saveToHDR: false) { image in
-                        print("DEBUG: Taken Screenshot")
-                        let imageData = image?.pngData()
-                        Storage.addARSnapShot(imageData: imageData)
-                    }
-                case .removeAllAnchors:
-                    self?.scene.anchors.removeAll()
-                }
-            }
-            .store(in: &cancellbles)
+//        ARManager.shared
+//            .actionStream
+//            .sink { [weak self] action in
+//                
+//                switch action {
+//                case .placePlantObject(let plant):
+//                    self?.placePlantObject(plant: plant)
+//                case .placeShapeObject(let shape, let color):
+//                    self?.placeShapeObject(shape: shape, color: color)
+//                case .takeAScreenshot:
+//                    self?.snapshot(saveToHDR: false) { image in
+//                        print("DEBUG: Taken Screenshot")
+//                        let imageData = image?.pngData()
+//                        Storage.addARSnapShot(imageData: imageData)
+//                    }
+//                case .removeAllAnchors:
+//                    self?.scene.anchors.removeAll()
+//                }
+//            }
+//            .store(in: &cancellbles)
     }
     
     func placeShapeObject(shape: ARObjectShape, color: Color) {
-        var shapeObjectMesh: MeshResource
-        switch shape {
-        case .block: shapeObjectMesh = MeshResource.generateBox(size: 0.1)
-        case .sphere: shapeObjectMesh = MeshResource.generateSphere(radius: 0.1)
-        }
-        
-        let material = SimpleMaterial(color: UIColor(color), isMetallic: false)
-        let entity = ModelEntity(mesh: shapeObjectMesh, materials: [material])
-        
-        let anchor = AnchorEntity(plane: .horizontal)
-        anchor.addChild(entity)
-        
-        scene.addAnchor(anchor)
-        
-        entity.generateCollisionShapes(recursive: true)
-        self.installGestures([.all], for: entity)
+//        var shapeObjectMesh: MeshResource
+//        switch shape {
+//        case .block: shapeObjectMesh = MeshResource.generateBox(size: 0.1)
+//        case .sphere: shapeObjectMesh = MeshResource.generateSphere(radius: 0.1)
+//        }
+//        
+//        let material = SimpleMaterial(color: UIColor(color), isMetallic: false)
+//        let entity = ModelEntity(mesh: shapeObjectMesh, materials: [material])
+//        
+//        let anchor = AnchorEntity(plane: .horizontal)
+//        anchor.addChild(entity)
+//        
+//        scene.addAnchor(anchor)
+//        
+//        entity.generateCollisionShapes(recursive: true)
+//        self.installGestures([.all], for: entity)
     }
     
     func placePlantObject(plant: ARObjectPlant) {

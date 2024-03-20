@@ -14,8 +14,7 @@ struct HomeView: View {
     var body: some View {
         ZStack {
             
-            AngularGradient(colors: [Color(.systemGreen), Color(.systemFill)], center: .bottomTrailing)
-                .ignoresSafeArea()
+            APP_BACKGROUND_VIEW
             
             content
         }
@@ -23,9 +22,8 @@ struct HomeView: View {
             BaseARView()
                 .environmentObject(homeViewModel)
         }
-        .fullScreenCover(isPresented: $homeViewModel.showTriviaView) {
-            TriviaView()
-                .environmentObject(homeViewModel)
+        .fullScreenCover(isPresented: $homeViewModel.showSettingsView) {
+            ProfileView()
         }
     }
 }
@@ -45,26 +43,43 @@ extension HomeView {
     }
     
     private var headlineAndQuote: some View {
-        VStack(spacing: 32) {
+        VStack(alignment: .leading, spacing: 16) {
+            HStack {
+                Spacer()
+                settingsButton
+            }
             headline
             quote
         }
         .padding()
+        .padding(.horizontal, 8)
+    }
+    
+    private var settingsButton: some View {
+        Button {
+            homeViewModel.showSettingsView = true
+        } label: {
+            Image(systemName: "gearshape.fill")
+                .font(.title2)
+        }
     }
     
     private var headline: some View {
-        Text("Scapea")
+        Text("Greetings")
             .font(.largeTitle.bold())
+            .foregroundColor(.accentColor)
+        
     }
     
     private var quote: some View {
         HStack(alignment: .top) {
-            Image(systemName: "quote.opening")
-            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua")
-                .font(.body)
+//            Image(systemName: "quote.opening")
+            Text("Welcome to the lush world of Scapea! Where each tap takes you one step closer to your green haven.")
+                .font(.callout)
                 .multilineTextAlignment(.leading)
         }
-        .fontWeight(.ultraLight)
+        .fontWeight(.light)
+        .foregroundStyle(.secondary)
     }
     
     private var options: some View {
@@ -77,7 +92,6 @@ extension HomeView {
                             .onTapGesture {
                                 switch action {
                                 case .ar: homeViewModel.showARView = true
-                                case .chat: homeViewModel.showTriviaView = true
                                 default: break
                                 }
                             }

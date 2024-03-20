@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ActionCardView: View {
     
-    var action: ScapeaAction = .chat
+    var action: ScapeaAction = .ar
     
     var body: some View {
         Rectangle()
@@ -26,6 +26,9 @@ struct ActionCardView: View {
                         switch action {
                         case .ar:
                             action.image
+                                .fontWeight(.ultraLight)
+                                .frame(width: 120, height: 120)
+                                .padding(.vertical)
                         default:
                             action.image
                                 .fontWeight(.ultraLight)
@@ -40,6 +43,7 @@ struct ActionCardView: View {
                     Text(action.description)
                         .multilineTextAlignment(.leading)
                         .font(.caption)
+                        .foregroundStyle(.secondary)
                 }
                 .foregroundColor(.white)
                 .padding()
