@@ -30,6 +30,7 @@ extension MyPlantCardView {
         HStack {
             
             myPlant.image
+                .frame(width: 60, height: 80)
             
             VStack(alignment: .leading, spacing: 16) {
                 VStack(alignment: .leading, spacing: 0) {

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GetServicesView: View {
     
-    @State var selectedService: ScapeaAvatar = .one
+    @State var selectedService: GardenService = .none
     @State var showServiceDetails: Bool = false
     
     var body: some View {
