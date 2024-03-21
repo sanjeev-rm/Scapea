@@ -1,2 +1,4 @@
 # Scapea
-An Augmented Reality App.
+One stop for all your gardening needs.
+
+###### Team: PDF Files
