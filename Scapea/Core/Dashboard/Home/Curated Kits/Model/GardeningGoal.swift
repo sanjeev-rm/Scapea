@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+enum GardeningGoal: String, CaseIterable {
+    case hobby = "Hobby"
+    case aesthetics = "Aesthetics"
+}

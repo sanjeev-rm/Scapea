@@ -10,6 +10,7 @@ import SwiftUI
 struct MarketPlaceView: View {
     
     @State var query: String = ""
+    @State var showCuratedKitsView: Bool = false
     
     var body: some View {
         NavigationView {
@@ -20,12 +21,12 @@ struct MarketPlaceView: View {
                         .background(.regularMaterial)
                         .cornerRadius(16, corners: [.allCorners])
                     
-                    Button {
-                        
-                    } label: {
-                        Image(systemName: "hand.point.up.left.and.text")
-                            .font(.largeTitle)
-                    }
+//                    Button {
+//                        showCuratedKitsView = true
+//                    } label: {
+//                        Image(systemName: "hand.point.up.left.and.text")
+//                            .font(.largeTitle)
+//                    }
                 }
                 .padding()
                 
@@ -67,7 +68,7 @@ struct MarketPlaceView: View {
                         }
                         .padding()
                         .padding([.vertical])
-                        .background(.regularMaterial)
+                        .background(.thinMaterial)
                         .cornerRadius(16, corners: [.bottomRight, .topRight])
                         
                         Spacer()
@@ -83,11 +84,13 @@ struct MarketPlaceView: View {
                             }
                         }
                     }
+                    .scrollIndicators(.hidden)
                     .padding()
                 }
                 
             }
             .navigationTitle("Market place")
+            .navigationBarTitleDisplayMode(.inline)
             .background(APP_BACKGROUND_VIEW)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
@@ -98,6 +101,18 @@ struct MarketPlaceView: View {
                             .font(.title2)
                     }
                 }
+                
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        showCuratedKitsView = true
+                    } label: {
+                        Image(systemName: "hand.point.up.left.and.text")
+                            .font(.title)
+                    }
+                }
+            }
+            .fullScreenCover(isPresented: $showCuratedKitsView) {
+                CuratedKitsForm()
             }
         }
     }

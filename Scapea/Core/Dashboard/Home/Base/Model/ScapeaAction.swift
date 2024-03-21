@@ -10,8 +10,8 @@ import SwiftUI
 
 enum ScapeaAction: CaseIterable {
     case ar
-    case chat
-    case aboutUs
+    case curatedKits
+    case scapedia
     
     var cardView: some View {
         return ActionCardView(action: self)
@@ -20,16 +20,16 @@ enum ScapeaAction: CaseIterable {
     var title: String {
         switch self {
         case .ar: return "AR"
-        case .chat: return "Curated Kits"
-        case .aboutUs: return "Scapedia"
+        case .curatedKits: return "Curated Kits"
+        case .scapedia: return "Scapedia"
         }
     }
     
     var description: String {
         switch self {
         case .ar: return "See it, Believe it, Grow it! Explore Your Dream Garden in Reality with Scapea's AR Garden Visualizer."
-        case .chat: return "Tailored Gardens, Delivered to Your Doorstep! Discover Perfectly Curated Plant Kits for Your Lifestyle and Location with Scapea."
-        case .aboutUs: return "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        case .curatedKits: return "Tailored Gardens, Delivered to Your Doorstep! Discover Perfectly Curated Plant Kits for Your Lifestyle and Location with Scapea."
+        case .scapedia: return "Explore, Diagnose, and Nurture with Scapedia! Your Comprehensive Plant Care Companion, Right in Your Pocket."
         }
     }
     
@@ -39,10 +39,10 @@ enum ScapeaAction: CaseIterable {
 //            return Image(scapeaImage: .arScannerImage)
             return Image(systemName: "arkit")
                 .resizable()
-        case .chat:
+        case .curatedKits:
             return Image(systemName: "hand.point.up.left.and.text")
                 .resizable()
-        case .aboutUs:
+        case .scapedia:
             return Image(systemName: "atom")
                 .resizable()
         }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Scapedia: View {
+struct ScapediaView: View {
     
     @Environment(\.dismiss) var dismiss
     
@@ -52,5 +52,5 @@ struct Scapedia: View {
 }
 
 #Preview {
-    Scapedia()
+    ScapediaView()
 }

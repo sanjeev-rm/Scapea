@@ -52,7 +52,7 @@ extension MyPlantCardView {
         }
         .frame(height: 80)
         .padding()
-        .background(.regularMaterial)
+        .background(.thinMaterial)
         .cornerRadius(16, corners: [.allCorners])
     }
     

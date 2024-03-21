@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MarketItemView: View {
     
-    @State var item: MarketItem = SAMPLE_ITEMS[0]
+    var item: MarketItem = SAMPLE_ITEMS[0]
     
     var body: some View {
         HStack {
@@ -29,7 +29,7 @@ struct MarketItemView: View {
         }
         .frame(height: 80)
         .padding()
-        .background(.regularMaterial)
+        .background(.thinMaterial)
         .cornerRadius(16, corners: [.allCorners])
     }
 }

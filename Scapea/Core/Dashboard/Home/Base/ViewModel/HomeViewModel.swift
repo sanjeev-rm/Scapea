@@ -11,4 +11,6 @@ class HomeViewModel: ObservableObject {
     
     @Published var showARView: Bool = false
     @Published var showSettingsView: Bool = false
+    @Published var showCuratedKitsView: Bool = false
+    @Published var showScapediaView: Bool = false
 }

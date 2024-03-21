@@ -40,19 +40,31 @@ extension GetServicesView {
         VStack(alignment: .leading, spacing: 32) {
             Text("Get Services")
                 .font(.largeTitle.bold())
+                .foregroundColor(.accentColor)
             
             VStack(spacing: 32) {
                 HStack(spacing: 32) {
-                    AvatarView(scapeaAvatar: .one, currentlySelectedAvatar: $selectedService)
-                    AvatarView(scapeaAvatar: .two, currentlySelectedAvatar: $selectedService)
-                    AvatarView(scapeaAvatar: .three, currentlySelectedAvatar: $selectedService)
+                    GardenServiceView(gardenService: .lawnCare)
+                        .onTapGesture { showServiceDetails = true }
+                    Spacer()
+                    GardenServiceView(gardenService: .weeding)
+                        .onTapGesture { showServiceDetails = true }
+                    Spacer()
+                    GardenServiceView(gardenService: .pruningAndTrimming)
+                        .onTapGesture { showServiceDetails = true }
                 }
                 HStack(spacing: 32) {
-                    AvatarView(scapeaAvatar: .four, currentlySelectedAvatar: $selectedService)
-                    AvatarView(scapeaAvatar: .five, currentlySelectedAvatar: $selectedService)
-                    AvatarView(scapeaAvatar: .six, currentlySelectedAvatar: $selectedService)
+                    GardenServiceView(gardenService: .pestAndDiseaseControl)
+                        .onTapGesture { showServiceDetails = true }
+                    Spacer()
+                    GardenServiceView(gardenService: .landscapeDesigning)
+                        .onTapGesture { showServiceDetails = true }
+                    Spacer()
+                    GardenServiceView(gardenService: .consultationAndAdvice)
+                        .onTapGesture { showServiceDetails = true }
                 }
             }
+            .padding(.horizontal)
             
             Divider()
             
@@ -61,6 +73,7 @@ extension GetServicesView {
                     .aspectRatio(contentMode: .fit)
                 Text("Sit back, relax and watch your garden flourish with Scapea's maintenance services!")
                     .font(.callout)
+                    .fontWeight(.light)
                     .foregroundStyle(.secondary)
             }
             

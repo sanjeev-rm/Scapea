@@ -9,10 +9,27 @@ import SwiftUI
 
 struct GeneratedKitView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            ScrollView {
+                ForEach(SAMPLE_ITEMS, id: \.title) { item in
+                    MarketItemView(item: item)
+                }
+            }
+            
+            Spacer()
+            
+            ScapeaButton(title: "Buy", showProgress: .constant(false)) {}
+        }
+        .padding()
+        .scrollIndicators(.hidden)
+        .navigationTitle("Your kit")
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(APP_BACKGROUND_VIEW)
     }
 }
 
 #Preview {
-    GeneratedKitView()
+    NavigationStack {
+        GeneratedKitView()
+    }
 }

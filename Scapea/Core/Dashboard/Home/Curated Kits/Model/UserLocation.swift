@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+enum UserLocation: String, CaseIterable {
+    case mumbai = "Mumbai"
+    case chennai = "Chennai"
+    case shimla = "Shimla"
+    case delhi = "Delhi"
+}

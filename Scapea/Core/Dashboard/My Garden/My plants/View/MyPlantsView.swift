@@ -14,6 +14,7 @@ struct MyPlantsView: View {
             VStack(alignment: .leading, spacing: 32) {
                 Text("My Plants")
                     .font(.largeTitle.bold())
+                    .foregroundColor(.accentColor)
                 
                 ForEach(SAMPLE_MY_PLANTS, id: \.name) { myplant in
                     MyPlantCardView(myPlant: myplant)

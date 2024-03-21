@@ -25,6 +25,12 @@ struct HomeView: View {
         .fullScreenCover(isPresented: $homeViewModel.showSettingsView) {
             ProfileView()
         }
+        .fullScreenCover(isPresented: $homeViewModel.showCuratedKitsView) {
+            CuratedKitsForm()
+        }
+        .fullScreenCover(isPresented: $homeViewModel.showScapediaView) {
+            ScapediaView()
+        }
     }
 }
 
@@ -92,7 +98,8 @@ extension HomeView {
                             .onTapGesture {
                                 switch action {
                                 case .ar: homeViewModel.showARView = true
-                                default: break
+                                case .curatedKits: homeViewModel.showCuratedKitsView = true
+                                case .scapedia: homeViewModel.showScapediaView = true
                                 }
                             }
                             .scaleEffect(CGSize(width: scale, height: scale))

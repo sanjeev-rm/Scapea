@@ -28,6 +28,14 @@
 		C7208CAA2AA7BAA600F5F7D5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7208CA92AA7BAA600F5F7D5 /* HomeView.swift */; };
 		C7208CAC2AA7BAB300F5F7D5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7208CAB2AA7BAB300F5F7D5 /* SettingsView.swift */; };
 		C7208CAE2AA7BE7300F5F7D5 /* AlertSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7208CAD2AA7BE7300F5F7D5 /* AlertSheetView.swift */; };
+		C748BB2A2BABA07B00505355 /* ScapediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C748BB292BABA07B00505355 /* ScapediaView.swift */; };
+		C75774882BAB6C6C0080C021 /* GardenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75774872BAB6C6C0080C021 /* GardenService.swift */; };
+		C757748F2BAB6FB00080C021 /* GardenServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C757748E2BAB6FB00080C021 /* GardenServiceView.swift */; };
+		C75774912BAB86240080C021 /* GardeningGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75774902BAB86240080C021 /* GardeningGoal.swift */; };
+		C75774932BAB86A90080C021 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75774922BAB86A90080C021 /* UserLocation.swift */; };
+		C75774952BAB90C40080C021 /* GeneratedKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75774942BAB90C40080C021 /* GeneratedKitView.swift */; };
+		C75774972BAB97110080C021 /* CommunityBlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75774962BAB97110080C021 /* CommunityBlogView.swift */; };
+		C75774992BAB975E0080C021 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75774982BAB975E0080C021 /* Blog.swift */; };
 		C75BA7F12AA50E42002B9888 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75BA7F02AA50E41002B9888 /* ForgotPasswordViewModel.swift */; };
 		C75BA7F32AA50EA2002B9888 /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75BA7F22AA50EA2002B9888 /* EmailView.swift */; };
 		C75BA7F52AA510E4002B9888 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75BA7F42AA510E4002B9888 /* OTPView.swift */; };
@@ -56,6 +64,7 @@
 		C7A41E4C2BAB051E00BCD6F5 /* ServiceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A41E4B2BAB051E00BCD6F5 /* ServiceDetailsView.swift */; };
 		C7A41E4E2BAB148100BCD6F5 /* MarketItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A41E4D2BAB148100BCD6F5 /* MarketItemView.swift */; };
 		C7A41E502BAB149400BCD6F5 /* MarketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A41E4F2BAB149400BCD6F5 /* MarketItem.swift */; };
+		C7A41E562BAB225500BCD6F5 /* CuratedKitsForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A41E552BAB225500BCD6F5 /* CuratedKitsForm.swift */; };
 		C7A7F64B2AA65E1B009B9A2A /* SignUpOtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A7F64A2AA65E1B009B9A2A /* SignUpOtpView.swift */; };
 		C7A7F64D2AA66014009B9A2A /* SelectYourAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A7F64C2AA66014009B9A2A /* SelectYourAvatarView.swift */; };
 		C7A7F6552AA66989009B9A2A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A7F6542AA66989009B9A2A /* DashboardView.swift */; };
@@ -102,6 +111,14 @@
 		C7208CA92AA7BAA600F5F7D5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C7208CAB2AA7BAB300F5F7D5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C7208CAD2AA7BE7300F5F7D5 /* AlertSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSheetView.swift; sourceTree = "<group>"; };
+		C748BB292BABA07B00505355 /* ScapediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScapediaView.swift; sourceTree = "<group>"; };
+		C75774872BAB6C6C0080C021 /* GardenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenService.swift; sourceTree = "<group>"; };
+		C757748E2BAB6FB00080C021 /* GardenServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenServiceView.swift; sourceTree = "<group>"; };
+		C75774902BAB86240080C021 /* GardeningGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardeningGoal.swift; sourceTree = "<group>"; };
+		C75774922BAB86A90080C021 /* UserLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
+		C75774942BAB90C40080C021 /* GeneratedKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedKitView.swift; sourceTree = "<group>"; };
+		C75774962BAB97110080C021 /* CommunityBlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityBlogView.swift; sourceTree = "<group>"; };
+		C75774982BAB975E0080C021 /* Blog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
 		C75BA7F02AA50E41002B9888 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 		C75BA7F22AA50EA2002B9888 /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
 		C75BA7F42AA510E4002B9888 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
@@ -130,6 +147,7 @@
 		C7A41E4B2BAB051E00BCD6F5 /* ServiceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsView.swift; sourceTree = "<group>"; };
 		C7A41E4D2BAB148100BCD6F5 /* MarketItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItemView.swift; sourceTree = "<group>"; };
 		C7A41E4F2BAB149400BCD6F5 /* MarketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketItem.swift; sourceTree = "<group>"; };
+		C7A41E552BAB225500BCD6F5 /* CuratedKitsForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuratedKitsForm.swift; sourceTree = "<group>"; };
 		C7A7F64A2AA65E1B009B9A2A /* SignUpOtpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpOtpView.swift; sourceTree = "<group>"; };
 		C7A7F64C2AA66014009B9A2A /* SelectYourAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectYourAvatarView.swift; sourceTree = "<group>"; };
 		C7A7F6542AA66989009B9A2A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -179,6 +197,7 @@
 			children = (
 				C74E13A72AB37CCF005E5DB5 /* Base */,
 				C7CC8DC02AAF715400E7B5FC /* AR */,
+				C7A41E512BAB21DB00BCD6F5 /* Curated Kits */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -354,6 +373,51 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C75774892BAB6EEE0080C021 /* My plants */ = {
+			isa = PBXGroup;
+			children = (
+				C7A41E362BAACEF100BCD6F5 /* Model */,
+				C7A41E342BAACEE600BCD6F5 /* View */,
+				C7A41E352BAACEEC00BCD6F5 /* View Model */,
+			);
+			path = "My plants";
+			sourceTree = "<group>";
+		};
+		C757748A2BAB6EF60080C021 /* Garden Service */ = {
+			isa = PBXGroup;
+			children = (
+				C757748D2BAB6F3D0080C021 /* Model */,
+				C757748C2BAB6F390080C021 /* View */,
+				C757748B2BAB6F300080C021 /* View Model */,
+			);
+			path = "Garden Service";
+			sourceTree = "<group>";
+		};
+		C757748B2BAB6F300080C021 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		C757748C2BAB6F390080C021 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7A41E452BAAF8AA00BCD6F5 /* GetServicesView.swift */,
+				C7A41E4B2BAB051E00BCD6F5 /* ServiceDetailsView.swift */,
+				C757748E2BAB6FB00080C021 /* GardenServiceView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C757748D2BAB6F3D0080C021 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C75774872BAB6C6C0080C021 /* GardenService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C7951F532AA460DC006DF1E6 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,6 +432,7 @@
 			isa = PBXGroup;
 			children = (
 				C7A7F6542AA66989009B9A2A /* DashboardView.swift */,
+				C748BB292BABA07B00505355 /* ScapediaView.swift */,
 				C70B40F72AAADE4A0048693B /* Home */,
 				C7A41E312BAACC1D00BCD6F5 /* My Garden */,
 				C7A41E322BAACC2700BCD6F5 /* Market Place */,
@@ -447,9 +512,9 @@
 		C7A41E312BAACC1D00BCD6F5 /* My Garden */ = {
 			isa = PBXGroup;
 			children = (
-				C7A41E362BAACEF100BCD6F5 /* Model */,
-				C7A41E342BAACEE600BCD6F5 /* View */,
-				C7A41E352BAACEEC00BCD6F5 /* View Model */,
+				C7A41E372BAACF0900BCD6F5 /* MyGardenView.swift */,
+				C75774892BAB6EEE0080C021 /* My plants */,
+				C757748A2BAB6EF60080C021 /* Garden Service */,
 			);
 			path = "My Garden";
 			sourceTree = "<group>";
@@ -477,11 +542,8 @@
 		C7A41E342BAACEE600BCD6F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C7A41E372BAACF0900BCD6F5 /* MyGardenView.swift */,
 				C7A41E432BAAF88600BCD6F5 /* MyPlantsView.swift */,
-				C7A41E452BAAF8AA00BCD6F5 /* GetServicesView.swift */,
 				C7A41E472BAAF92B00BCD6F5 /* MyPlantCardView.swift */,
-				C7A41E4B2BAB051E00BCD6F5 /* ServiceDetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -536,6 +598,7 @@
 			isa = PBXGroup;
 			children = (
 				C7A41E412BAACF7500BCD6F5 /* CommunityView.swift */,
+				C75774962BAB97110080C021 /* CommunityBlogView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -543,6 +606,42 @@
 		C7A41E402BAACF6600BCD6F5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C75774982BAB975E0080C021 /* Blog.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7A41E512BAB21DB00BCD6F5 /* Curated Kits */ = {
+			isa = PBXGroup;
+			children = (
+				C7A41E542BAB220F00BCD6F5 /* Model */,
+				C7A41E532BAB220800BCD6F5 /* View */,
+				C7A41E522BAB21E900BCD6F5 /* View Model */,
+			);
+			path = "Curated Kits";
+			sourceTree = "<group>";
+		};
+		C7A41E522BAB21E900BCD6F5 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		C7A41E532BAB220800BCD6F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7A41E552BAB225500BCD6F5 /* CuratedKitsForm.swift */,
+				C75774942BAB90C40080C021 /* GeneratedKitView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7A41E542BAB220F00BCD6F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C75774902BAB86240080C021 /* GardeningGoal.swift */,
+				C75774922BAB86A90080C021 /* UserLocation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -704,6 +803,7 @@
 				C7951F7B2AA4A420006DF1E6 /* ScapeaButton.swift in Sources */,
 				C7A41E382BAACF0900BCD6F5 /* MyGardenView.swift in Sources */,
 				C7CC8DE32AB192DF00E7B5FC /* ARSnapshotsImageView.swift in Sources */,
+				C75774912BAB86240080C021 /* GardeningGoal.swift in Sources */,
 				C7951F662AA46787006DF1E6 /* RoundedCorner.swift in Sources */,
 				C7CC8DDA2AB153E200E7B5FC /* ARSnapshots.swift in Sources */,
 				C7951F682AA48590006DF1E6 /* OnboardingProgressView.swift in Sources */,
@@ -714,12 +814,16 @@
 				C7A41E3D2BAACF5400BCD6F5 /* MarketPlaceView.swift in Sources */,
 				C70B40FC2AAAE3010048693B /* UpdateUsernameView.swift in Sources */,
 				C70FBAF42AA45F5E0047272B /* ContentView.swift in Sources */,
+				C748BB2A2BABA07B00505355 /* ScapediaView.swift in Sources */,
 				C7951F732AA497F1006DF1E6 /* AuthenticationViewModel.swift in Sources */,
 				C7A7F6552AA66989009B9A2A /* DashboardView.swift in Sources */,
+				C75774932BAB86A90080C021 /* UserLocation.swift in Sources */,
 				C7A41E302BAAC11000BCD6F5 /* ScapeaBackgroundColor.swift in Sources */,
 				C70B41022AAB09050048693B /* ScapeaAvatar.swift in Sources */,
 				C75BA7F72AA510F7002B9888 /* ResetPasswordView.swift in Sources */,
+				C7A41E562BAB225500BCD6F5 /* CuratedKitsForm.swift in Sources */,
 				C7951F702AA49777006DF1E6 /* AuthenticationView.swift in Sources */,
+				C75774992BAB975E0080C021 /* Blog.swift in Sources */,
 				C7951F752AA49E18006DF1E6 /* LoginView.swift in Sources */,
 				C75BA7F32AA50EA2002B9888 /* EmailView.swift in Sources */,
 				C7951F5D2AA463B3006DF1E6 /* OnboardingView.swift in Sources */,
@@ -736,17 +840,21 @@
 				C70B40FE2AAAE30F0048693B /* UpdatePasswordView.swift in Sources */,
 				C7CC8DC72AAF849F00E7B5FC /* CustomARViewRepresentable.swift in Sources */,
 				C7CC8DD42AB0266500E7B5FC /* ARAction.swift in Sources */,
+				C75774952BAB90C40080C021 /* GeneratedKitView.swift in Sources */,
 				C70B6AE72AA90F08000DED0A /* Bundle+Extension.swift in Sources */,
 				C7A41E462BAAF8AA00BCD6F5 /* GetServicesView.swift in Sources */,
 				C7B84B5C2AB546FD009D83ED /* Tulip.rcproject in Sources */,
 				C7A41E422BAACF7500BCD6F5 /* CommunityView.swift in Sources */,
 				C70B41062AADC1360048693B /* ScapeaAction.swift in Sources */,
 				C7208CAC2AA7BAB300F5F7D5 /* SettingsView.swift in Sources */,
+				C75774882BAB6C6C0080C021 /* GardenService.swift in Sources */,
 				C75BA7F52AA510E4002B9888 /* OTPView.swift in Sources */,
+				C75774972BAB97110080C021 /* CommunityBlogView.swift in Sources */,
 				C7CC8DC92AAF854400E7B5FC /* BaseARView.swift in Sources */,
 				C7A41E4A2BAAFB0F00BCD6F5 /* MyPlant.swift in Sources */,
 				C7208CA62AA7B4E900F5F7D5 /* AvatarView.swift in Sources */,
 				C7A7F64B2AA65E1B009B9A2A /* SignUpOtpView.swift in Sources */,
+				C757748F2BAB6FB00080C021 /* GardenServiceView.swift in Sources */,
 				C70B41082AADC22A0048693B /* ActionCardView.swift in Sources */,
 				C7CC8DD02AB00EA200E7B5FC /* BaseARViewModel.swift in Sources */,
 				C7CC8DE12AB182E800E7B5FC /* ARSnapshotsGridMode.swift in Sources */,

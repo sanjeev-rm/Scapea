@@ -18,6 +18,7 @@ struct DashboardView: View {
                     Image(systemName: "camera.macro")
                 }
                 .tag(1)
+//                .toolbarBackground(.ultraThinMaterial, for: .tabBar)
             
             HomeView()
                 .tabItem {

@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct GardenServiceView: View {
+    var gardenService: GardenService = .lawnCare
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .center) {
+            gardenService.image
+//                .resizable()
+                .font(.title2)
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 30, height: 30)
+                .foregroundColor(.accentColor)
+            
+//            Text(gardenService.rawValue)
+//                .foregroundStyle(.secondary)
+//                .font(.caption)
+        }
+        .padding(16)
+        .background(.thinMaterial)
+        .cornerRadius(16)
     }
 }
 
